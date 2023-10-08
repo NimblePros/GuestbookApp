@@ -1,4 +1,4 @@
-using Nimble.GuestbookApp.Core;
+using Nimble.GuestbookApp.Core.GuestbookAggregate;
 using Nimble.GuestbookApp.UseCases.Entries;
 
 namespace Nimble.GuestbookApp.Infrastructure.Data.Queries;

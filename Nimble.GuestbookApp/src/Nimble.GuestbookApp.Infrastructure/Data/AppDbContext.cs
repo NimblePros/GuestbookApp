@@ -2,6 +2,7 @@
 using Ardalis.SharedKernel;
 using Nimble.GuestbookApp.Core.ContributorAggregate;
 using Microsoft.EntityFrameworkCore;
+using Nimble.GuestbookApp.Core.GuestbookAggregate;
 
 namespace Nimble.GuestbookApp.Infrastructure.Data;
 
@@ -17,6 +18,7 @@ public class AppDbContext : DbContext
   }
 
   public DbSet<Contributor> Contributors => Set<Contributor>();
+  public DbSet<Guestbook> Guestbooks => Set<Guestbook>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
