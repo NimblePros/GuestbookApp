@@ -21,7 +21,9 @@ public class ListEntriesQueryService : IListEntriesQueryService
 
     if(firstGuestbook is null) return new List<EntryDTO>();
     
-    return firstGuestbook.Entries.Select(entry =>
+    return firstGuestbook.Entries
+      .OrderByDescending(e => e.DateTimeCreated)
+      .Select(entry =>
       new EntryDTO{
         Id = entry.Id,
         EmailAddress = entry.EmailAddress,
