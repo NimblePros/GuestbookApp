@@ -1,6 +1,6 @@
 using Ardalis.SharedKernel;
 
-namespace Nimble.GuestbookApp.Core;
+namespace Nimble.GuestbookApp.Core.GuestbookAggregate;
 
 public class GuestbookEntry : EntityBase
 {

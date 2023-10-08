@@ -1,8 +1,8 @@
 ﻿using Ardalis.SharedKernel;
 
-namespace Nimble.GuestbookApp.Core;
+namespace Nimble.GuestbookApp.Core.GuestbookAggregate;
 
-public class Guestbook : EntityBase
+public class Guestbook : EntityBase, IAggregateRoot
 {
     public string Name { get; set;} = "";
     public List<GuestbookEntry> Entries {get;} = new();
