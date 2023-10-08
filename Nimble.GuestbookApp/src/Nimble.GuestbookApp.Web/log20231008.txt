@@ -1,0 +1,52 @@
+2023-10-08 21:16:05.849 +02:00 [INF] Registered 6 endpoints in 661 milliseconds.
+2023-10-08 21:16:06.911 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-10-08 21:16:06.981 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Contributors" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Contributors" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Status" INTEGER NOT NULL
+);
+2023-10-08 21:16:07.163 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-10-08 21:16:07.195 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name", "c"."Status"
+FROM "Contributors" AS "c"
+2023-10-08 21:16:07.363 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 7), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2023-10-08 21:16:07.377 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 8), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2023-10-08 21:16:07.541 +02:00 [INF] Now listening on: http://localhost:57679
+2023-10-08 21:16:07.542 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-08 21:16:07.543 +02:00 [INF] Hosting environment: Development
+2023-10-08 21:16:07.543 +02:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-10-08 21:16:07.815 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger - -
+2023-10-08 21:16:07.951 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger - - - 302 0 - 138.5391ms
+2023-10-08 21:16:07.959 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2023-10-08 21:16:08.099 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;+charset=utf-8 140.2216ms
+2023-10-08 21:16:08.115 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-bundle.js - -
+2023-10-08 21:16:08.116 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui.css - -
+2023-10-08 21:16:08.121 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-standalone-preset.js - -
+2023-10-08 21:16:08.197 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-08 21:16:08.197 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-08 21:16:08.197 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-10-08 21:16:08.200 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-standalone-preset.js - - - 200 322865 text/javascript 78.1924ms
+2023-10-08 21:16:08.200 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui.css - - - 200 145208 text/css 83.9792ms
+2023-10-08 21:16:08.200 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-bundle.js - - - 200 1045710 text/javascript 84.8685ms
+2023-10-08 21:16:08.425 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2023-10-08 21:16:08.462 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-08 21:16:08.486 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/favicon-32x32.png - -
+2023-10-08 21:16:08.487 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-10-08 21:16:08.487 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/favicon-32x32.png - - - 200 628 image/png 0.7539ms
+2023-10-08 21:16:09.122 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 696.4194ms
+2023-10-08 21:16:17.376 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/Entries - -
+2023-10-08 21:16:17.382 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-10-08 21:16:17.385 +02:00 [INF] Executing endpoint 'HTTP: GET /Entries'
+2023-10-08 21:16:17.463 +02:00 [INF] Executed endpoint 'HTTP: GET /Entries'
+2023-10-08 21:16:17.468 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/Entries - - - 200 - application/json 92.5289ms
