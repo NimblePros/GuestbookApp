@@ -11,3 +11,4 @@ public class FakeListContributorsQueryService : IListContributorsQueryService
     return Task.FromResult(result.AsEnumerable());
   }
 }
+

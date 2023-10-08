@@ -50,3 +50,87 @@ RETURNING "Id";
 2023-10-08 21:16:17.385 +02:00 [INF] Executing endpoint 'HTTP: GET /Entries'
 2023-10-08 21:16:17.463 +02:00 [INF] Executed endpoint 'HTTP: GET /Entries'
 2023-10-08 21:16:17.468 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/Entries - - - 200 - application/json 92.5289ms
+2023-10-08 21:50:01.129 +02:00 [INF] Registered 6 endpoints in 132 milliseconds.
+2023-10-08 21:50:01.629 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-10-08 21:50:01.762 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-10-08 21:50:01.806 +02:00 [INF] Now listening on: http://localhost:57679
+2023-10-08 21:50:01.806 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-08 21:50:01.806 +02:00 [INF] Hosting environment: Development
+2023-10-08 21:50:01.807 +02:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-10-08 21:50:02.000 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger - -
+2023-10-08 21:50:02.054 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger - - - 302 0 - 55.4874ms
+2023-10-08 21:50:02.063 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2023-10-08 21:50:02.161 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;+charset=utf-8 97.9523ms
+2023-10-08 21:50:02.565 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2023-10-08 21:50:02.569 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-08 21:50:03.006 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 440.2305ms
+2023-10-08 21:50:08.321 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/Entries - -
+2023-10-08 21:50:08.324 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-10-08 21:50:08.326 +02:00 [INF] Executing endpoint 'HTTP: GET /Entries'
+2023-10-08 21:50:08.350 +02:00 [INF] Handling ListEntriesQuery
+2023-10-08 21:50:08.350 +02:00 [INF] Property Skip : null
+2023-10-08 21:50:08.350 +02:00 [INF] Property Take : null
+2023-10-08 21:50:08.354 +02:00 [INF] Executed endpoint 'HTTP: GET /Entries'
+2023-10-08 21:50:08.355 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Nimble.GuestbookApp.UseCases.Entries.ListEntriesHandler.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found on type 'Nimble.GuestbookApp.UseCases.Entries.ListEntriesHandler' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Nimble.GuestbookApp.UseCases.Entries.IListEntriesQueryService query' of constructor 'Void .ctor(Nimble.GuestbookApp.UseCases.Entries.IListEntriesQueryService)'.
+
+See https://autofac.rtfd.io/help/no-constructors-bindable for more info.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.<>c__DisplayClass14_0.<UseSingleConstructorActivation>b__0(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Nimble.GuestbookApp.Web.Entries.List.HandleAsync(CancellationToken cancellationToken) in c:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web\Entries\List.cs:line 23
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-08 21:50:08.375 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/Entries - - - 500 - text/plain;+charset=utf-8 53.6664ms
+2023-10-08 22:00:28.741 +02:00 [INF] Registered 6 endpoints in 212 milliseconds.
+2023-10-08 22:00:29.423 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-10-08 22:00:29.583 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-10-08 22:00:29.673 +02:00 [INF] Now listening on: http://localhost:57679
+2023-10-08 22:00:29.674 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-08 22:00:29.674 +02:00 [INF] Hosting environment: Development
+2023-10-08 22:00:29.674 +02:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-10-08 22:00:29.910 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger - -
+2023-10-08 22:00:29.997 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger - - - 302 0 - 89.3942ms
+2023-10-08 22:00:30.004 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2023-10-08 22:00:30.148 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;+charset=utf-8 143.9995ms
+2023-10-08 22:00:30.349 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2023-10-08 22:00:30.360 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-08 22:00:30.879 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 530.1623ms
+2023-10-08 22:00:35.653 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/Entries - -
+2023-10-08 22:00:35.657 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-10-08 22:00:35.661 +02:00 [INF] Executing endpoint 'HTTP: GET /Entries'
+2023-10-08 22:00:35.697 +02:00 [INF] Handling ListEntriesQuery
+2023-10-08 22:00:35.697 +02:00 [INF] Property Skip : null
+2023-10-08 22:00:35.698 +02:00 [INF] Property Take : null
+2023-10-08 22:00:35.701 +02:00 [INF] Handled ListEntriesQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[Nimble.GuestbookApp.UseCases.Entries.EntryDTO]] in 2 ms
+2023-10-08 22:00:35.731 +02:00 [INF] Executed endpoint 'HTTP: GET /Entries'
+2023-10-08 22:00:35.734 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/Entries - - - 200 - application/json 81.4621ms

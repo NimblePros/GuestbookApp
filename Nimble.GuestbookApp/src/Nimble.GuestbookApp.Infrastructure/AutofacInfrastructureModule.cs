@@ -11,6 +11,7 @@ using Nimble.GuestbookApp.UseCases.Contributors.List;
 using MediatR;
 using MediatR.Pipeline;
 using Module = Autofac.Module;
+using Nimble.GuestbookApp.UseCases.Entries;
 
 namespace Nimble.GuestbookApp.Infrastructure;
 
@@ -75,7 +76,11 @@ public class AutofacInfrastructureModule : Module
 
   private void RegisterQueries(ContainerBuilder builder)
   {
+    builder.RegisterType<FakeListEntriesQueryService>()
+      .As<IListEntriesQueryService>()
+      .InstancePerLifetimeScope();
   }
+
 
   private void RegisterMediatR(ContainerBuilder builder)
   {
