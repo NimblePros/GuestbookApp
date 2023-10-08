@@ -85,7 +85,10 @@ public class AutofacInfrastructureModule : Module
     //   .As<IListEntriesQueryService>()
     //   .InstancePerLifetimeScope();
 
-    builder.RegisterType<ListEntriesDapperQueryService>()
+    // builder.RegisterType<ListEntriesDapperQueryService>()
+    //   .As<IListEntriesQueryService>()
+    //   .InstancePerLifetimeScope();
+    builder.RegisterType<ListEntriesQueryService>()
       .As<IListEntriesQueryService>()
       .InstancePerLifetimeScope();
   }

@@ -4,6 +4,7 @@ using Nimble.GuestbookApp.UseCases.Entries;
 
 namespace Nimble.GuestbookApp.Infrastructure.Data.Queries;
 
+
 public class ListEntriesDapperQueryService : IListEntriesQueryService
 {
   private readonly DapperContext _dapper;
