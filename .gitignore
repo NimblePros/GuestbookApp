@@ -396,3 +396,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+Nimble.GuestbookApp/src/Nimble.GuestbookApp.Web/log*.txt
