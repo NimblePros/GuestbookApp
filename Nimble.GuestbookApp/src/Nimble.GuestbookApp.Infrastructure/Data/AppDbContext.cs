@@ -6,6 +6,7 @@ using Nimble.GuestbookApp.Core.GuestbookAggregate;
 
 namespace Nimble.GuestbookApp.Infrastructure.Data;
 
+
 public class AppDbContext : DbContext
 {
   private readonly IDomainEventDispatcher? _dispatcher;

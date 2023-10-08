@@ -12,6 +12,7 @@ using MediatR;
 using MediatR.Pipeline;
 using Module = Autofac.Module;
 using Nimble.GuestbookApp.UseCases.Entries;
+using Dapper;
 
 namespace Nimble.GuestbookApp.Infrastructure;
 
@@ -62,6 +63,10 @@ public class AutofacInfrastructureModule : Module
       RegisterProductionOnlyDependencies(builder);
     }
     RegisterEF(builder);
+
+    builder.RegisterType<DapperContext>()
+      .SingleInstance();
+
     RegisterQueries(builder);
     RegisterMediatR(builder);
   }
@@ -76,11 +81,14 @@ public class AutofacInfrastructureModule : Module
 
   private void RegisterQueries(ContainerBuilder builder)
   {
-    builder.RegisterType<FakeListEntriesQueryService>()
+    // builder.RegisterType<FakeListEntriesQueryService>()
+    //   .As<IListEntriesQueryService>()
+    //   .InstancePerLifetimeScope();
+
+    builder.RegisterType<ListEntriesDapperQueryService>()
       .As<IListEntriesQueryService>()
       .InstancePerLifetimeScope();
   }
-
 
   private void RegisterMediatR(ContainerBuilder builder)
   {

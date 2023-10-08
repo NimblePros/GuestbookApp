@@ -2,7 +2,6 @@ using Nimble.GuestbookApp.Core.GuestbookAggregate;
 using Nimble.GuestbookApp.UseCases.Entries;
 
 namespace Nimble.GuestbookApp.Infrastructure.Data.Queries;
-
 public class FakeListEntriesQueryService : IListEntriesQueryService
 {
   public Task<IEnumerable<EntryDTO>> ListAsync()
@@ -29,6 +28,6 @@ public class FakeListEntriesQueryService : IListEntriesQueryService
     });
     return Task.FromResult(guestbook.Entries
       .OrderByDescending(e => e.DateTimeCreated)
-      .Select(e => new EntryDTO(e.Id, e.EmailAddress, e.Message, e.DateTimeCreated)));
+      .Select(e => new EntryDTO() { Id =e.Id, EmailAddress = e.EmailAddress, Message = e.Message, DateTimeCreated = e.DateTimeCreated}));
   }
 }
