@@ -54,7 +54,7 @@ public class AutofacInfrastructureModule : Module
   protected override void Load(ContainerBuilder builder)
   {
     LoadAssemblies();
-    if (_isDevelopment)
+    if (_isDevelopment && false)
     {
       RegisterDevelopmentOnlyDependencies(builder);
     }
