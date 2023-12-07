@@ -1,10 +1,13 @@
 ﻿using FastEndpoints;
-using Nimble.GuestbookApp.Core.GuestbookAggregate;
+using MediatR;
+using Nimble.GuestbookApp.UseCases.Entries.List;
 
 namespace Nimble.GuestbookApp.Web.Entries;
 
-public class List : EndpointWithoutRequest<List<GuestbookEntry>>
+public class List(IMediator mediator) : EndpointWithoutRequest<EntryListResponse>
 {
+  private readonly IMediator _mediator = mediator;
+
   public override void Configure()
   {
     Get("/Entries");
@@ -13,31 +16,15 @@ public class List : EndpointWithoutRequest<List<GuestbookEntry>>
 
   public override async Task HandleAsync(CancellationToken cancellationToken)
   {
-    var guestbook = new Guestbook();
+    var result = await _mediator.Send(new ListEntriesQuery(null, null));
 
-    guestbook.Entries.Add(new GuestbookEntry()
+    if (result.IsSuccess)
     {
-      DateTimeCreated = new DateTime(2024, 1, 1),
-      EmailAddress = "alice@test.com",
-      Message = "Hello world!",
-    });
-    guestbook.Entries.Add(new GuestbookEntry()
-    {
-      DateTimeCreated = new DateTime(2024, 2, 14),
-      EmailAddress = "bob@test.com",
-      Message = "Happy Valentine's Day!",
-    });
-    guestbook.Entries.Add(new GuestbookEntry()
-    {
-      DateTimeCreated = new DateTime(2024, 6, 20),
-      EmailAddress = "carol@test.com",
-      Message = "Happy summer!",
-    });
-
-    await Task.Delay(1);
-    Response = guestbook.Entries
-      .OrderByDescending(e => e.DateTimeCreated)
-      .ToList();
+      Response = new EntryListResponse
+      {
+        Entries = result.Value.Select(e => new EntryRecord(e.Id, e.EmailAddress,
+e.Message, e.DateTimeCreated)).ToList()
+      };
+    }
   }
-
 }
