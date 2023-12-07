@@ -80,9 +80,14 @@ public class AutofacInfrastructureModule : Module
       .As<IListContributorsQueryService>()
       .InstancePerLifetimeScope();
 
-    builder.RegisterType<FakeListEntriesQueryService>()
+    //builder.RegisterType<FakeListEntriesQueryService>()
+    //  .As<IListEntriesQueryService>()
+    //  .InstancePerLifetimeScope();
+
+    builder.RegisterType<ListEntriesQueryService>()
       .As<IListEntriesQueryService>()
       .InstancePerLifetimeScope();
+
   }
 
   private void RegisterMediatR(ContainerBuilder builder)

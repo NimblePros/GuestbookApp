@@ -152,3 +152,384 @@ RETURNING "Id";
 2023-12-07 14:19:50.991 -05:00 [INF] Executing endpoint 'HTTP: GET /Entries'
 2023-12-07 14:19:51.068 -05:00 [INF] Executed endpoint 'HTTP: GET /Entries'
 2023-12-07 14:19:51.073 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/Entries - 200 null application/json 88.6971ms
+2023-12-07 16:05:41.478 -05:00 [INF] Registered 6 endpoints in 1923 milliseconds.
+2023-12-07 16:05:42.771 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 16:05:42.953 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 16:05:43.153 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 16:05:43.155 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 16:05:43.157 -05:00 [INF] Hosting environment: Development
+2023-12-07 16:05:43.158 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 16:05:43.373 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger - null null
+2023-12-07 16:05:43.634 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger - 302 0 null 262.1907ms
+2023-12-07 16:05:43.641 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-07 16:05:43.901 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 259.9551ms
+2023-12-07 16:05:43.918 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-07 16:05:43.924 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 5.6838ms
+2023-12-07 16:05:43.962 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-07 16:05:43.992 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.9577ms
+2023-12-07 16:05:44.096 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-07 16:05:44.134 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-07 16:05:44.595 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 499.8358ms
+2023-12-07 16:05:51.904 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/Entries - null null
+2023-12-07 16:05:51.909 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-07 16:05:51.912 -05:00 [INF] Executing endpoint 'HTTP: GET /Entries'
+2023-12-07 16:05:51.954 -05:00 [INF] Handling ListEntriesQuery
+2023-12-07 16:05:51.956 -05:00 [INF] Property Skip : null
+2023-12-07 16:05:51.958 -05:00 [INF] Property Take : null
+2023-12-07 16:05:51.963 -05:00 [INF] Handled ListEntriesQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[Nimble.GuestbookApp.UseCases.Entries.EntryDTO]] in 2 ms
+2023-12-07 16:05:51.988 -05:00 [INF] Executed endpoint 'HTTP: GET /Entries'
+2023-12-07 16:05:51.992 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/Entries - 200 null application/json 88.4614ms
+2023-12-07 16:09:39.292 -05:00 [INF] Registered 6 endpoints in 312 milliseconds.
+2023-12-07 16:09:39.865 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 16:09:40.011 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 16:09:40.076 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 16:09:40.078 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 16:09:40.079 -05:00 [INF] Hosting environment: Development
+2023-12-07 16:09:40.080 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 16:09:40.208 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-07 16:09:40.371 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 163.0987ms
+2023-12-07 16:09:40.380 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-07 16:09:40.385 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 4.2851ms
+2023-12-07 16:09:40.390 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-07 16:09:40.415 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.0577ms
+2023-12-07 16:09:40.472 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-07 16:09:40.481 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-07 16:09:40.876 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 403.7787ms
+2023-12-07 16:10:22.414 -05:00 [INF] Registered 6 endpoints in 284 milliseconds.
+2023-12-07 16:10:23.173 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 16:10:23.314 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 16:10:23.377 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 16:10:23.379 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 16:10:23.380 -05:00 [INF] Hosting environment: Development
+2023-12-07 16:10:23.381 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 16:10:23.457 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-07 16:10:23.619 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 161.9198ms
+2023-12-07 16:10:23.628 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-07 16:10:23.633 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 5.2524ms
+2023-12-07 16:10:23.657 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-07 16:10:23.681 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.7374ms
+2023-12-07 16:10:23.929 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-07 16:10:23.938 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-07 16:10:24.377 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 447.802ms
+2023-12-07 16:11:54.404 -05:00 [INF] Registered 6 endpoints in 282 milliseconds.
+2023-12-07 16:11:55.099 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 16:11:55.245 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 16:11:55.309 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 16:11:55.312 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 16:11:55.313 -05:00 [INF] Hosting environment: Development
+2023-12-07 16:11:55.314 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 16:11:55.514 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-07 16:11:55.686 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 172.5458ms
+2023-12-07 16:11:55.694 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-07 16:11:55.700 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 6.1498ms
+2023-12-07 16:11:55.722 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-07 16:11:55.747 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.4655ms
+2023-12-07 16:11:55.877 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-07 16:11:55.888 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-07 16:11:56.308 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 430.4169ms
+2023-12-07 16:12:05.701 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/Entries - null null
+2023-12-07 16:12:05.707 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-07 16:12:05.709 -05:00 [INF] Executing endpoint 'HTTP: GET /Entries'
+2023-12-07 16:12:05.741 -05:00 [INF] Handling ListEntriesQuery
+2023-12-07 16:12:05.744 -05:00 [INF] Property Skip : null
+2023-12-07 16:12:05.746 -05:00 [INF] Property Take : null
+2023-12-07 16:12:05.837 -05:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-12-07 16:12:05.898 -05:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Name", "g0"."Id", "g0"."DateTimeCreated", "g0"."EmailAddress", "g0"."GuestbookId", "g0"."Message"
+FROM (
+    SELECT "g"."Id", "g"."Name"
+    FROM "Guestbooks" AS "g"
+    LIMIT 1
+) AS "t"
+LEFT JOIN "GuestbookEntry" AS "g0" ON "t"."Id" = "g0"."GuestbookId"
+ORDER BY "t"."Id"
+2023-12-07 16:12:05.934 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Nimble.GuestbookApp.Infrastructure.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Guestbooks'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Guestbooks'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-12-07 16:12:05.942 -05:00 [INF] Executed endpoint 'HTTP: GET /Entries'
+2023-12-07 16:12:05.945 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Guestbooks'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Nimble.GuestbookApp.Infrastructure.Data.Queries.ListEntriesQueryService.ListAsync() in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Infrastructure\Data\Queries\ListEntriesQueryService.cs:line 18
+   at Nimble.GuestbookApp.UseCases.Entries.List.ListEntriesHandler.Handle(ListEntriesQuery request, CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.UseCases\Entries\List\ListEntriesHandler.cs:line 14
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Nimble.GuestbookApp.Web.Entries.List.HandleAsync(CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web\Entries\List.cs:line 19
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-07 16:12:05.982 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/Entries - 500 null text/plain; charset=utf-8 280.6339ms
+2023-12-07 16:24:57.530 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-12-07 16:24:57.627 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2023-12-07 16:24:57.631 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-12-07 16:24:57.635 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-12-07 16:24:57.646 -05:00 [INF] Applying migration '20231207212407_InitialModel'.
+2023-12-07 16:24:57.672 -05:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Contributors" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Contributors" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Status" INTEGER NOT NULL
+);
+2023-12-07 16:25:21.723 -05:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-12-07 16:25:21.823 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2023-12-07 16:25:21.834 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-12-07 16:25:21.839 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-12-07 16:25:21.865 -05:00 [INF] Applying migration '20231207212407_InitialModel'.
+2023-12-07 16:25:21.890 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Contributors" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Contributors" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Status" INTEGER NOT NULL
+);
+2023-12-07 16:25:21.893 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Guestbooks" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Guestbooks" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL
+);
+2023-12-07 16:25:21.896 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "GuestbookEntry" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_GuestbookEntry" PRIMARY KEY AUTOINCREMENT,
+    "EmailAddress" TEXT NOT NULL,
+    "Message" TEXT NOT NULL,
+    "DateTimeCreated" TEXT NOT NULL,
+    "GuestbookId" INTEGER NULL,
+    CONSTRAINT "FK_GuestbookEntry_Guestbooks_GuestbookId" FOREIGN KEY ("GuestbookId") REFERENCES "Guestbooks" ("Id")
+);
+2023-12-07 16:25:21.899 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_GuestbookEntry_GuestbookId" ON "GuestbookEntry" ("GuestbookId");
+2023-12-07 16:25:21.900 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20231207212407_InitialModel', '8.0.0');
+2023-12-07 16:26:48.537 -05:00 [INF] Registered 6 endpoints in 349 milliseconds.
+2023-12-07 16:26:49.313 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 16:26:49.470 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 16:26:49.503 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name", "c"."Status"
+FROM "Contributors" AS "c"
+2023-12-07 16:26:49.622 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 7), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2023-12-07 16:26:49.647 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 8), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2023-12-07 16:26:49.686 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 17)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Guestbooks" ("Name")
+VALUES (@p0)
+RETURNING "Id";
+2023-12-07 16:26:49.721 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 14), @p2='?' (DbType = Int32), @p3='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-07 16:26:49.807 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 16:26:49.809 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 16:26:49.810 -05:00 [INF] Hosting environment: Development
+2023-12-07 16:26:49.812 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 16:26:49.899 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-07 16:26:50.133 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 234.3255ms
+2023-12-07 16:26:50.230 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-07 16:26:50.237 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 6.4928ms
+2023-12-07 16:26:50.245 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-07 16:26:50.281 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.6521ms
+2023-12-07 16:26:50.530 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-07 16:26:50.593 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-07 16:26:51.130 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 600.0607ms
+2023-12-07 16:26:59.887 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/Entries - null null
+2023-12-07 16:26:59.891 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-07 16:26:59.894 -05:00 [INF] Executing endpoint 'HTTP: GET /Entries'
+2023-12-07 16:26:59.915 -05:00 [INF] Handling ListEntriesQuery
+2023-12-07 16:26:59.917 -05:00 [INF] Property Skip : null
+2023-12-07 16:26:59.918 -05:00 [INF] Property Take : null
+2023-12-07 16:26:59.999 -05:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-12-07 16:27:00.037 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Name", "g0"."Id", "g0"."DateTimeCreated", "g0"."EmailAddress", "g0"."GuestbookId", "g0"."Message"
+FROM (
+    SELECT "g"."Id", "g"."Name"
+    FROM "Guestbooks" AS "g"
+    LIMIT 1
+) AS "t"
+LEFT JOIN "GuestbookEntry" AS "g0" ON "t"."Id" = "g0"."GuestbookId"
+ORDER BY "t"."Id"
+2023-12-07 16:27:00.049 -05:00 [INF] Handled ListEntriesQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[Nimble.GuestbookApp.UseCases.Entries.EntryDTO]] in 129 ms
+2023-12-07 16:27:00.074 -05:00 [INF] Executed endpoint 'HTTP: GET /Entries'
+2023-12-07 16:27:00.081 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/Entries - 200 null application/json 193.9046ms
+2023-12-07 16:33:54.590 -05:00 [INF] Registered 7 endpoints in 338 milliseconds.
+2023-12-07 16:33:55.229 -05:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 16:33:55.385 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 16:33:55.439 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 16:33:55.441 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 16:33:55.442 -05:00 [INF] Hosting environment: Development
+2023-12-07 16:33:55.443 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 16:33:55.683 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-07 16:33:55.880 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 197.4554ms
+2023-12-07 16:33:55.891 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-07 16:33:55.895 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 4.0912ms
+2023-12-07 16:33:55.920 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-07 16:33:55.973 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.9803ms
+2023-12-07 16:33:56.054 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-07 16:33:56.063 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-07 16:33:56.512 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 457.6259ms
+2023-12-07 16:34:12.805 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 58
+2023-12-07 16:34:12.811 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-07 16:34:12.814 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-07 16:34:12.858 -05:00 [INF] Handling CreateEntryCommand
+2023-12-07 16:34:12.861 -05:00 [INF] Property emailAddress : zee@yyy.com
+2023-12-07 16:34:12.863 -05:00 [INF] Property message : string
+2023-12-07 16:34:12.955 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-07 16:34:13.103 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-07 16:34:13.128 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 263 ms
+2023-12-07 16:34:13.138 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-07 16:34:13.147 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 342.1703ms
+2023-12-07 16:34:18.080 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/Entries - null null
+2023-12-07 16:34:18.085 -05:00 [INF] Executing endpoint 'HTTP: GET /Entries'
+2023-12-07 16:34:18.099 -05:00 [INF] Handling ListEntriesQuery
+2023-12-07 16:34:18.101 -05:00 [INF] Property Skip : null
+2023-12-07 16:34:18.102 -05:00 [INF] Property Take : null
+2023-12-07 16:34:18.144 -05:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-12-07 16:34:18.175 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Name", "g0"."Id", "g0"."DateTimeCreated", "g0"."EmailAddress", "g0"."GuestbookId", "g0"."Message"
+FROM (
+    SELECT "g"."Id", "g"."Name"
+    FROM "Guestbooks" AS "g"
+    LIMIT 1
+) AS "t"
+LEFT JOIN "GuestbookEntry" AS "g0" ON "t"."Id" = "g0"."GuestbookId"
+ORDER BY "t"."Id"
+2023-12-07 16:34:18.186 -05:00 [INF] Handled ListEntriesQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[Nimble.GuestbookApp.UseCases.Entries.EntryDTO]] in 81 ms
+2023-12-07 16:34:18.201 -05:00 [INF] Executed endpoint 'HTTP: GET /Entries'
+2023-12-07 16:34:18.203 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/Entries - 200 null application/json 123.2306ms
+2023-12-07 16:34:37.330 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 61
+2023-12-07 16:34:37.337 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-07 16:34:37.341 -05:00 [INF] Handling CreateEntryCommand
+2023-12-07 16:34:37.344 -05:00 [INF] Property emailAddress : zee@yyy.com
+2023-12-07 16:34:37.345 -05:00 [INF] Property message : once more
+2023-12-07 16:34:37.348 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-07 16:34:37.351 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-07 16:34:37.357 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 10 ms
+2023-12-07 16:34:37.360 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-07 16:34:37.361 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 30.786ms
+2023-12-07 16:34:40.236 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/Entries - null null
+2023-12-07 16:34:40.240 -05:00 [INF] Executing endpoint 'HTTP: GET /Entries'
+2023-12-07 16:34:40.242 -05:00 [INF] Handling ListEntriesQuery
+2023-12-07 16:34:40.243 -05:00 [INF] Property Skip : null
+2023-12-07 16:34:40.245 -05:00 [INF] Property Take : null
+2023-12-07 16:34:40.249 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Name", "g0"."Id", "g0"."DateTimeCreated", "g0"."EmailAddress", "g0"."GuestbookId", "g0"."Message"
+FROM (
+    SELECT "g"."Id", "g"."Name"
+    FROM "Guestbooks" AS "g"
+    LIMIT 1
+) AS "t"
+LEFT JOIN "GuestbookEntry" AS "g0" ON "t"."Id" = "g0"."GuestbookId"
+ORDER BY "t"."Id"
+2023-12-07 16:34:40.252 -05:00 [INF] Handled ListEntriesQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[Nimble.GuestbookApp.UseCases.Entries.EntryDTO]] in 5 ms
+2023-12-07 16:34:40.254 -05:00 [INF] Executed endpoint 'HTTP: GET /Entries'
+2023-12-07 16:34:40.257 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/Entries - 200 null application/json 20.922ms
+2023-12-07 16:36:16.549 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/Entries - null null
+2023-12-07 16:36:16.552 -05:00 [INF] Executing endpoint 'HTTP: GET /Entries'
+2023-12-07 16:36:16.554 -05:00 [INF] Handling ListEntriesQuery
+2023-12-07 16:36:16.555 -05:00 [INF] Property Skip : null
+2023-12-07 16:36:16.556 -05:00 [INF] Property Take : null
+2023-12-07 16:36:16.557 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Name", "g0"."Id", "g0"."DateTimeCreated", "g0"."EmailAddress", "g0"."GuestbookId", "g0"."Message"
+FROM (
+    SELECT "g"."Id", "g"."Name"
+    FROM "Guestbooks" AS "g"
+    LIMIT 1
+) AS "t"
+LEFT JOIN "GuestbookEntry" AS "g0" ON "t"."Id" = "g0"."GuestbookId"
+ORDER BY "t"."Id"
+2023-12-07 16:36:16.560 -05:00 [INF] Handled ListEntriesQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[Nimble.GuestbookApp.UseCases.Entries.EntryDTO]] in 3 ms
+2023-12-07 16:36:16.561 -05:00 [INF] Executed endpoint 'HTTP: GET /Entries'
+2023-12-07 16:36:16.563 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/Entries - 200 null application/json 14.1471ms

@@ -2,6 +2,22 @@
 @hostname=localhost
 @port=57679
 
+// List all guestbook entries
+GET http://{{hostname}}:{{port}}/Entries
+
+###
+
+// Create a new guestbook entry
+POST http://{{hostname}}:{{port}}/Entries
+Content-Type: application/json
+
+{
+  "emailAddress": "abc@def.com",
+  "message": "hello devintersection"
+}
+
+###
+
 // List all contributors
 GET http://{{hostname}}:{{port}}/Contributors
 
