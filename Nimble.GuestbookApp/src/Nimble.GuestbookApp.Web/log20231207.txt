@@ -1,0 +1,154 @@
+2023-12-07 13:15:44.922 -05:00 [INF] Registered 7 endpoints in 270 milliseconds.
+2023-12-07 13:15:45.920 -05:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 13:15:46.088 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 13:15:46.179 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 13:15:46.179 -05:00 [INF] Hosting environment: Development
+2023-12-07 13:15:46.179 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 13:15:46.193 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger - -
+2023-12-07 13:15:46.930 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/index.html - -
+2023-12-07 13:15:46.931 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger - - - 302 - - 739.1052ms
+2023-12-07 13:15:47.030 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/index.html - - - 200 - text/html;+charset=utf-8 100.8117ms
+2023-12-07 13:15:47.051 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 13:15:47.056 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - - - 200 12016 application/javascript;+charset=utf-8 3.9304ms
+2023-12-07 13:15:47.093 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_vs/browserLink - -
+2023-12-07 13:15:47.152 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.4505ms
+2023-12-07 13:15:47.373 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - -
+2023-12-07 13:15:47.409 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-07 13:15:47.960 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 586.8494ms
+2023-12-07 13:16:14.354 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57678/Entries application/json 58
+2023-12-07 13:16:14.357 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-07 13:16:14.359 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-07 13:16:14.461 -05:00 [INF] Handling CreateEntryCommand
+2023-12-07 13:16:14.461 -05:00 [INF] Property emailAddress : foo@bar.com
+2023-12-07 13:16:14.462 -05:00 [INF] Property message : string
+2023-12-07 13:16:14.556 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-07 13:16:14.691 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-07 13:16:14.717 -05:00 [INF] Handling EntryCreatedEvent for 4
+2023-12-07 13:16:18.837 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-07 13:16:18.839 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at Nimble.GuestbookApp.Infrastructure.Email.SmtpEmailSender.SendEmailAsync(String to, String from, String subject, String body) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Infrastructure\Email\SmtpEmailSender.cs:line 26
+   at Nimble.GuestbookApp.Core.GuestbookAggregate.NotifyCreatorEntryCreatedHandler.Handle(EntryCreatedEvent domainEvent, CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Core\GuestbookAggregate\NotifyCreatorEntryCreatedHandler.cs:line 24
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at Ardalis.SharedKernel.MediatRDomainEventDispatcher.DispatchAndClearEvents(IEnumerable`1 entitiesWithEvents)
+   at Nimble.GuestbookApp.Infrastructure.Data.AppDbContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Infrastructure\Data\AppDbContext.cs:line 43
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.SaveChangesAsync(CancellationToken cancellationToken)
+   at CreateEntryHandler.Handle(CreateEntryCommand request, CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.UseCases\Entries\Create\CreateEntryHandler.cs:line 23
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Nimble.GuestbookApp.Web.Entries.Create.HandleAsync(CreateEntryRequest request, CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web\Entries\Create.cs:line 33
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-07 13:16:18.879 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57678/Entries application/json 58 - 500 - text/plain;+charset=utf-8 4524.3901ms
+2023-12-07 13:16:35.975 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57678/Entries application/json 58
+2023-12-07 13:16:35.976 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-07 13:16:35.977 -05:00 [INF] Handling CreateEntryCommand
+2023-12-07 13:16:35.978 -05:00 [INF] Property emailAddress : foo@bar.com
+2023-12-07 13:16:35.978 -05:00 [INF] Property message : string
+2023-12-07 13:16:35.981 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-07 13:16:35.985 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-07 13:16:35.989 -05:00 [INF] Handling EntryCreatedEvent for 5
+2023-12-07 13:16:36.151 -05:00 [WRN] Sending email to foo@bar.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-07 13:16:36.152 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 174 ms
+2023-12-07 13:16:36.159 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-07 13:16:36.159 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57678/Entries application/json 58 - 200 - application/json 183.7317ms
+2023-12-07 13:59:58.586 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - -
+2023-12-07 13:59:58.587 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - - - 200 - - 1.2261ms
+2023-12-07 13:59:58.607 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/index.html - -
+2023-12-07 13:59:58.609 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - -
+2023-12-07 13:59:58.609 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - - - 200 - - 0.5053ms
+2023-12-07 13:59:58.613 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - -
+2023-12-07 13:59:58.614 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - - - 200 - - 0.6566ms
+2023-12-07 13:59:58.621 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/index.html - - - 200 - text/html;+charset=utf-8 13.9608ms
+2023-12-07 13:59:58.667 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - -
+2023-12-07 13:59:58.669 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - - - 200 - - 1.9637ms
+2023-12-07 13:59:58.691 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - -
+2023-12-07 13:59:58.692 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - - - 200 - - 0.5168ms
+2023-12-07 13:59:58.713 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - -
+2023-12-07 13:59:58.713 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - - - 200 - - 0.4733ms
+2023-12-07 13:59:58.751 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - -
+2023-12-07 13:59:58.751 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - -
+2023-12-07 13:59:58.751 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - - - 0 - - 0.1494ms
+2023-12-07 13:59:58.751 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - -
+2023-12-07 13:59:58.751 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - - - 0 - - 0.1060ms
+2023-12-07 13:59:58.751 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - - - 0 - - 0.0690ms
+2023-12-07 13:59:58.751 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - -
+2023-12-07 13:59:58.753 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/clear-browser-cache - - - 0 - - 1.6590ms
+2023-12-07 13:59:59.115 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 13:59:59.117 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - - - 200 12016 application/javascript;+charset=utf-8 1.5327ms
+2023-12-07 13:59:59.277 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_vs/browserLink - -
+2023-12-07 13:59:59.313 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.2502ms
+2023-12-07 14:19:43.030 -05:00 [INF] Registered 6 endpoints in 1985 milliseconds.
+2023-12-07 14:19:44.598 -05:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-12-07 14:19:44.700 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Contributors" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Contributors" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Status" INTEGER NOT NULL
+);
+2023-12-07 14:19:44.934 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 14:19:44.975 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name", "c"."Status"
+FROM "Contributors" AS "c"
+2023-12-07 14:19:45.119 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 7), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2023-12-07 14:19:45.143 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 8), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2023-12-07 14:19:45.567 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 14:19:45.569 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 14:19:45.571 -05:00 [INF] Hosting environment: Development
+2023-12-07 14:19:45.572 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 14:19:46.135 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger - null null
+2023-12-07 14:19:46.387 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger - 302 0 null 252.7693ms
+2023-12-07 14:19:46.394 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-07 14:19:46.772 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 377.7302ms
+2023-12-07 14:19:46.794 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-07 14:19:46.799 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 5.7663ms
+2023-12-07 14:19:46.843 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-07 14:19:46.879 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.2849ms
+2023-12-07 14:19:46.958 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-07 14:19:47.002 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-07 14:19:47.657 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 699.3289ms
+2023-12-07 14:19:50.984 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/Entries - null null
+2023-12-07 14:19:50.989 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-07 14:19:50.991 -05:00 [INF] Executing endpoint 'HTTP: GET /Entries'
+2023-12-07 14:19:51.068 -05:00 [INF] Executed endpoint 'HTTP: GET /Entries'
+2023-12-07 14:19:51.073 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/Entries - 200 null application/json 88.6971ms
