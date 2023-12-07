@@ -48,7 +48,7 @@ public static class SeedData
       EmailAddress = "alice@test.com",
       Message = "Hello world!"
     };
-    guestbook.Entries.Add(entry1);
+    guestbook.SeedEntry(entry1);
 
     dbContext.SaveChanges();
 

@@ -21,7 +21,7 @@ public class CreateEntryHandler : ICommandHandler<CreateEntryCommand, Result<int
       EmailAddress = request.emailAddress,
       Message = request.message
     };
-    guestbook.Entries.Add(newEntry);
+    guestbook.AddEntry(newEntry);
     await _guestbookRepo.SaveChangesAsync();
 
     return newEntry.Id;
