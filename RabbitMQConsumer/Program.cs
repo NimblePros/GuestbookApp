@@ -1,7 +1,6 @@
 using MassTransit;
 using Nimble.GuestbookApp.Core.Services;
 using RabbitMQConsumer;
-using System.Net.Mail;
 
 var builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddSingleton<MimeKitEmailSender>();
