@@ -4,6 +4,10 @@
 
 [Lab Manual PDF (.NET 8)](https://www.dropbox.com/scl/fi/rlva1w00cy0evuyk2e9tg/Clean-Architecture-with-ASP.NET-Core-Labs-for-net8.pdf?rlkey=rx9ftnbxsopzqrwp75xqjz3yr&dl=0)
 
+## Labs and Slides
+
+[Labs and Slides Dec 2023](https://www.dropbox.com/scl/fi/wi8viqwj0m6ay1utuxg0u/DistributedAppInADay.zip?rlkey=hws7xdfpiuw63vkrkmmbtl93n&dl=0)
+
 
 If interested, sign up for free SOLID email-based 5-day training course:
 [https://mailchi.mp/nimblepros/solid-email-course](https://mailchi.mp/nimblepros/solid-email-course)
