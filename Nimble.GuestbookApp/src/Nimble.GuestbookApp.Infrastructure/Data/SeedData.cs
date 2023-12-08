@@ -9,6 +9,7 @@ public static class SeedData
 {
   public static readonly Contributor Contributor1 = new("Ardalis");
   public static readonly Contributor Contributor2 = new("Snowfrog");
+  public const string TestGuestBookEntryEmail = "alice@test.com";
 
   public static void Initialize(IServiceProvider serviceProvider)
   {
@@ -45,7 +46,7 @@ public static class SeedData
     var entry1 = new GuestbookEntry()
     {
       DateTimeCreated = new DateTimeOffset(DateTime.Today),
-      EmailAddress = "alice@test.com",
+      EmailAddress = TestGuestBookEntryEmail,
       Message = "Hello world!"
     };
     guestbook.SeedEntry(entry1);

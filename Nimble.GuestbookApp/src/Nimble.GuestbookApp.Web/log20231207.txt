@@ -609,3 +609,107 @@ RETURNING "Id";
 2023-12-07 16:47:30.350 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 441 ms
 2023-12-07 16:47:30.359 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
 2023-12-07 16:47:30.366 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 507.9935ms
+2023-12-07 21:37:50.195 -05:00 [INF] Registered 7 endpoints in 300 milliseconds.
+2023-12-07 21:37:50.897 -05:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 21:37:51.087 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 21:37:51.149 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 21:37:51.152 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 21:37:51.154 -05:00 [INF] Hosting environment: Development
+2023-12-07 21:37:51.156 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 21:41:54.480 -05:00 [INF] Registered 7 endpoints in 319 milliseconds.
+2023-12-07 21:41:55.218 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 21:41:55.352 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 21:41:55.411 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 21:41:55.414 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 21:41:55.415 -05:00 [INF] Hosting environment: Development
+2023-12-07 21:41:55.416 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 21:49:16.667 -05:00 [INF] Registered 7 endpoints in 357 milliseconds.
+2023-12-07 21:49:17.324 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 21:49:17.493 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 21:49:17.553 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 21:49:17.555 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 21:49:17.556 -05:00 [INF] Hosting environment: Development
+2023-12-07 21:49:17.557 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 21:49:57.837 -05:00 [INF] Registered 7 endpoints in 386 milliseconds.
+2023-12-07 21:49:58.694 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 21:49:58.841 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 21:49:58.905 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 21:49:58.907 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 21:49:58.908 -05:00 [INF] Hosting environment: Development
+2023-12-07 21:49:58.910 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 21:50:30.890 -05:00 [INF] Registered 7 endpoints in 354 milliseconds.
+2023-12-07 21:50:31.531 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 21:50:31.686 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 21:50:31.740 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 21:50:31.743 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 21:50:31.745 -05:00 [INF] Hosting environment: Development
+2023-12-07 21:50:31.746 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 21:51:30.119 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger - null null
+2023-12-07 21:51:30.240 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger - 302 0 null 124.1479ms
+2023-12-07 21:51:30.245 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-07 21:51:30.348 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 102.5218ms
+2023-12-07 21:51:30.372 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-07 21:51:30.379 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 7.1043ms
+2023-12-07 21:51:30.418 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-07 21:51:30.472 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.5272ms
+2023-12-07 21:51:30.638 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-07 21:51:30.654 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-07 21:51:31.110 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 471.4442ms
+2023-12-07 21:51:53.647 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-07 21:51:53.652 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-07 21:51:53.655 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-07 21:51:53.698 -05:00 [INF] Handling CreateEntryCommand
+2023-12-07 21:51:53.701 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-07 21:51:53.702 -05:00 [INF] Property message : hi
+2023-12-07 21:51:53.787 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-07 21:51:53.910 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-07 21:51:53.937 -05:00 [INF] Handling EntryCreatedEvent for 6
+2023-12-07 21:51:54.063 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-07 21:51:54.066 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 363 ms
+2023-12-07 21:51:54.074 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-07 21:51:54.081 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 434.5297ms
+2023-12-07 21:52:24.491 -05:00 [INF] Registered 7 endpoints in 306 milliseconds.
+2023-12-07 21:52:25.287 -05:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 21:52:25.440 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 21:52:25.504 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 21:52:25.505 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 21:52:25.506 -05:00 [INF] Hosting environment: Development
+2023-12-07 21:52:25.507 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 21:52:25.591 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-07 21:52:25.779 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 189.5973ms
+2023-12-07 21:52:25.795 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-07 21:52:25.799 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-07 21:52:25.801 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 5.9944ms
+2023-12-07 21:52:25.821 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.5009ms
+2023-12-07 21:52:25.903 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-07 21:52:25.911 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-07 21:52:26.354 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 450.133ms
