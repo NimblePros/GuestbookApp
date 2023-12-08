@@ -8,6 +8,8 @@ using Nimble.GuestbookApp.Infrastructure.Data;
 using FastEndpoints;
 using FastEndpoints.Swagger;
 using Serilog;
+using Nimble.GuestbookApp.Web;
+using Nimble.GuestbookApp.Core.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,6 +48,13 @@ builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
   containerBuilder.RegisterModule(new DefaultCoreModule());
   containerBuilder.RegisterModule(new AutofacInfrastructureModule(builder.Environment.IsDevelopment()));
 });
+
+// wire up email worker service
+var workerSettings = new WorkerSettings();
+builder.Configuration.Bind(nameof(WorkerSettings), workerSettings);
+builder.Services.AddSingleton(workerSettings);
+builder.Services.AddHostedService<Worker>();
+builder.Services.AddScoped(typeof(ILoggerAdapter<>), typeof(LoggerAdapter<>));
 
 var app = builder.Build();
 

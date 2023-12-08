@@ -12,6 +12,7 @@ using MediatR;
 using MediatR.Pipeline;
 using Module = Autofac.Module;
 using Nimble.GuestbookApp.UseCases.Entries.List;
+using Nimble.GuestbookApp.Infrastructure.Messaging;
 
 namespace Nimble.GuestbookApp.Infrastructure;
 
@@ -64,6 +65,11 @@ public class AutofacInfrastructureModule : Module
     RegisterEF(builder);
     RegisterQueries(builder);
     RegisterMediatR(builder);
+
+    builder.RegisterType<EmailQueueProvider>()
+      .As<IEmailQueueProvider>()
+      .SingleInstance();
+
   }
 
   private void RegisterEF(ContainerBuilder builder)
