@@ -3,7 +3,7 @@ using static Nimble.GuestbookApp.Core.Services.EntryPointService;
 
 namespace Nimble.GuestbookApp.Core.Interfaces;
 
-public interface IEmailQueueProvider : IEmailQueueWriter
+public interface IEmailQueueWriter
 {
-  EmailDetails? TryRead();
+  Task WriteAsync(EmailDetails emailDetails);
 }

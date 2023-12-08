@@ -10,6 +10,14 @@ using FastEndpoints.Swagger;
 using Serilog;
 using Nimble.GuestbookApp.Web;
 using Nimble.GuestbookApp.Core.Interfaces;
+using Autofac.Core;
+using MassTransit;
+using static MassTransit.Logging.OperationName;
+using Nimble.GuestbookApp.Infrastructure.Messaging;
+using System.Configuration;
+using System.Net.Mail;
+using Nimble.GuestbookApp.Core.Services;
+using RabbitMQ.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,19 +50,47 @@ builder.Services.Configure<ServiceConfig>(config =>
   config.Path = "/listservices";
 });
 
-
-builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
-{
-  containerBuilder.RegisterModule(new DefaultCoreModule());
-  containerBuilder.RegisterModule(new AutofacInfrastructureModule(builder.Environment.IsDevelopment()));
-});
-
 // wire up email worker service
 var workerSettings = new WorkerSettings();
 builder.Configuration.Bind(nameof(WorkerSettings), workerSettings);
 builder.Services.AddSingleton(workerSettings);
 builder.Services.AddHostedService<Worker>();
 builder.Services.AddScoped(typeof(ILoggerAdapter<>), typeof(LoggerAdapter<>));
+
+// configure MassTransit with RabbitMQ
+
+var rabbitMQSettings = new RabbitMQSettings();
+builder.Configuration.GetSection("RabbitMQ").Bind(rabbitMQSettings);
+builder.Services.AddSingleton(rabbitMQSettings);
+
+builder.Services.AddMassTransit(config =>
+{
+  config.UsingRabbitMq((context, cfg) =>
+  {
+    cfg.Host(new Uri(rabbitMQSettings.Host), h =>
+    {
+      h.Username(rabbitMQSettings.Username);
+      h.Password(rabbitMQSettings.Password);
+    });
+    // Additional configuration
+    cfg.Publish<EmailDetails>(e =>
+    {
+      e.ExchangeType = ExchangeType.Direct;
+    });
+    //ConfigureQueues(cfg, rabbitMQSettings.QueueSettings);
+    //cfg.ReceiveEndpoint("my_queue", e =>
+    //{
+    //  e.Consumer<MyConsumer>();
+    //});
+  });
+});
+
+// keep this at the end of services registration
+builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
+{
+  containerBuilder.RegisterModule(new DefaultCoreModule());
+  containerBuilder.RegisterModule(new AutofacInfrastructureModule(builder.Environment.IsDevelopment()));
+});
 
 var app = builder.Build();
 

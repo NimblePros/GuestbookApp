@@ -1,0 +1,1244 @@
+2023-12-08 00:02:54.294 -05:00 [INF] Registered 7 endpoints in 2035 milliseconds.
+2023-12-08 00:02:55.489 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-08 00:02:55.700 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-08 00:02:55.884 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-08T00:02:55.8843204-05:00"
+2023-12-08 00:02:55.905 -05:00 [WRN] Start called, but the host was already started: "rabbitmq://localhost/" (Already Started)
+2023-12-08 00:02:56.073 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:02:56.073 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:02:56.152 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-08 00:02:56.154 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 00:02:56.155 -05:00 [INF] Hosting environment: Development
+2023-12-08 00:02:56.156 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-08 00:02:56.651 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:02:56.838 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 187.8241ms
+2023-12-08 00:02:56.891 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:02:56.896 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 4.9445ms
+2023-12-08 00:02:56.898 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:02:56.928 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.659ms
+2023-12-08 00:02:57.044 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:02:57.078 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-08 00:02:57.492 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 448.723ms
+2023-12-08 00:03:44.673 -05:00 [INF] Registered 7 endpoints in 520 milliseconds.
+2023-12-08 00:03:45.268 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-08 00:03:45.421 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-08 00:03:45.586 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-08T00:03:45.5858674-05:00"
+2023-12-08 00:03:45.652 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-08 00:03:45.654 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 00:03:45.655 -05:00 [INF] Hosting environment: Development
+2023-12-08 00:03:45.656 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-08 00:03:45.730 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:03:46.049 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:03:46.195 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 146.9283ms
+2023-12-08 00:03:46.203 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:03:46.208 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 5.3144ms
+2023-12-08 00:03:46.235 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:03:46.259 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.0064ms
+2023-12-08 00:03:46.346 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:03:46.356 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-08 00:03:46.818 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 471.887ms
+2023-12-08 00:04:25.345 -05:00 [INF] Registered 7 endpoints in 538 milliseconds.
+2023-12-08 00:04:26.069 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-08 00:04:26.214 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-08 00:04:26.369 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-08T00:04:26.3693028-05:00"
+2023-12-08 00:04:26.434 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-08 00:04:26.437 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 00:04:26.438 -05:00 [INF] Hosting environment: Development
+2023-12-08 00:04:26.439 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-08 00:04:26.513 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:04:26.618 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:04:26.786 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 169.2943ms
+2023-12-08 00:04:26.795 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:04:26.800 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 4.9324ms
+2023-12-08 00:04:26.810 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:04:26.837 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.9294ms
+2023-12-08 00:04:26.901 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:04:26.911 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-08 00:04:27.377 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 475.547ms
+2023-12-08 00:04:59.046 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:04:59.059 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 13.1775ms
+2023-12-08 00:04:59.074 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:04:59.078 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 3.2498ms
+2023-12-08 00:04:59.083 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:04:59.094 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.0766ms
+2023-12-08 00:04:59.174 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:04:59.179 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 4.6537ms
+2023-12-08 00:05:17.251 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:05:17.256 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-08 00:05:17.258 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:05:17.323 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:05:17.325 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:05:17.327 -05:00 [INF] Property message : hi
+2023-12-08 00:05:17.429 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:05:17.555 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:05:17.586 -05:00 [INF] Handling EntryCreatedEvent for 8
+2023-12-08 00:05:17.723 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:05:17.726 -05:00 [INF] Queueing up email to send for 8
+2023-12-08 00:05:17.728 -05:00 [INF] (MassTransit) Queueing up email to send for 8
+2023-12-08 00:05:17.736 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:05:17.740 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: The given key 'EmailQueue' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Nimble.GuestbookApp.Infrastructure.Messaging.RabbitMQEmailQueueWriter.WriteAsync(EmailDetails emailDetails) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Infrastructure\Messaging\RabbitMQEmailQueueProvider.cs:line 16
+   at Nimble.GuestbookApp.Core.GuestbookAggregate.NotifyWithQueueWriterCreatorEntryCreatedHandler.Handle(EntryCreatedEvent domainEvent, CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Core\GuestbookAggregate\NotifyWithMessagingCreatorEntryCreatedHandler.cs:line 37
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at Ardalis.SharedKernel.MediatRDomainEventDispatcher.DispatchAndClearEvents(IEnumerable`1 entitiesWithEvents)
+   at Nimble.GuestbookApp.Infrastructure.Data.AppDbContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Infrastructure\Data\AppDbContext.cs:line 41
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.SaveChangesAsync(CancellationToken cancellationToken)
+   at Nimble.GuestbookApp.UseCases.Entries.Create.CreateEntryHandler.Handle(CreateEntryCommand request, CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.UseCases\Entries\Create\CreateEntryHandler.cs:line 25
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Nimble.GuestbookApp.Web.Entries.Create.HandleAsync(CreateEntryRequest request, CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web\Entries\Create.cs:line 26
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-08 00:05:17.800 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 500 null text/plain; charset=utf-8 549.1982ms
+2023-12-08 00:05:26.424 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:05:26.532 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:05:26.536 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:06:49.238 -05:00 [INF] Registered 7 endpoints in 1124 milliseconds.
+2023-12-08 00:06:50.166 -05:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-08 00:06:50.448 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-08 00:06:50.637 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-08T00:06:50.6369052-05:00"
+2023-12-08 00:06:50.808 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-08 00:06:50.810 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 00:06:50.811 -05:00 [INF] Hosting environment: Development
+2023-12-08 00:06:50.812 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-08 00:06:50.900 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:07:00.222 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger - null null
+2023-12-08 00:07:00.648 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger - 302 0 null 437.8445ms
+2023-12-08 00:07:00.654 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:07:00.917 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 262.7374ms
+2023-12-08 00:07:00.979 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:07:00.993 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:07:00.999 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 6.7438ms
+2023-12-08 00:07:01.025 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.8438ms
+2023-12-08 00:07:01.154 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:07:01.175 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-08 00:07:01.809 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 654.9609ms
+2023-12-08 00:07:11.105 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:07:11.111 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-08 00:07:11.114 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:07:11.173 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:07:11.175 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:07:11.177 -05:00 [INF] Property message : hi
+2023-12-08 00:07:11.269 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:07:11.436 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:07:11.467 -05:00 [INF] Handling EntryCreatedEvent for 9
+2023-12-08 00:07:11.593 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:07:11.598 -05:00 [INF] Queueing up email to send for 9
+2023-12-08 00:07:11.600 -05:00 [INF] (MassTransit) Queueing up email to send for 9
+2023-12-08 00:08:20.963 -05:00 [INF] Registered 7 endpoints in 1288 milliseconds.
+2023-12-08 00:08:21.768 -05:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-08 00:08:21.957 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-08 00:08:22.138 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-08T00:08:22.1382195-05:00"
+2023-12-08 00:08:22.312 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-08 00:08:22.315 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 00:08:22.317 -05:00 [INF] Hosting environment: Development
+2023-12-08 00:08:22.318 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-08 00:08:22.395 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:08:31.111 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger - null null
+2023-12-08 00:08:31.573 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger - 302 0 null 468.2378ms
+2023-12-08 00:08:31.583 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:08:31.823 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 239.5486ms
+2023-12-08 00:08:31.860 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:08:31.877 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 16.2291ms
+2023-12-08 00:08:31.912 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:08:31.970 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.2847ms
+2023-12-08 00:08:32.057 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:08:32.073 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-08 00:08:32.715 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 658.1912ms
+2023-12-08 00:08:37.647 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:08:37.653 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-08 00:08:37.656 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:08:37.714 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:08:37.717 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:08:37.719 -05:00 [INF] Property message : hi
+2023-12-08 00:08:37.813 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:08:37.968 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:09:13.333 -05:00 [INF] Registered 7 endpoints in 485 milliseconds.
+2023-12-08 00:09:14.025 -05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-08 00:09:14.202 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-08 00:09:14.422 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-08T00:09:14.4225031-05:00"
+2023-12-08 00:09:14.508 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-08 00:09:14.510 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 00:09:14.511 -05:00 [INF] Hosting environment: Development
+2023-12-08 00:09:14.512 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-08 00:09:14.594 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:09:14.874 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger - null null
+2023-12-08 00:09:14.986 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger - 302 0 null 112.6603ms
+2023-12-08 00:09:14.991 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:09:15.077 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 85.5435ms
+2023-12-08 00:09:15.097 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:09:15.103 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 6.7004ms
+2023-12-08 00:09:15.145 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:09:15.184 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.7246ms
+2023-12-08 00:09:15.321 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:09:15.328 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-08 00:09:15.761 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 440.0879ms
+2023-12-08 00:09:27.783 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:09:27.786 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-08 00:09:27.788 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:09:27.836 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:09:27.839 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:09:27.841 -05:00 [INF] Property message : hi
+2023-12-08 00:09:27.932 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:09:28.066 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:09:28.095 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:09:28.097 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating λ:MediatR.INotificationHandler`1[[Nimble.GuestbookApp.Core.GuestbookAggregate.EntryCreatedEvent, Nimble.GuestbookApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]][] -> Nimble.GuestbookApp.Core.GuestbookAggregate.NotifyWithQueueWriterCreatorEntryCreatedHandler -> Nimble.GuestbookApp.Infrastructure.Messaging.RabbitMQEmailQueueWriter.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found on type 'Nimble.GuestbookApp.Infrastructure.Messaging.RabbitMQEmailQueueWriter' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Nimble.GuestbookApp.Infrastructure.Messaging.RabbitMQSettings settings' of constructor 'Void .ctor(MassTransit.IBusControl, Nimble.GuestbookApp.Infrastructure.Messaging.RabbitMQSettings)'.
+
+See https://autofac.rtfd.io/help/no-constructors-bindable for more info.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.<>c__DisplayClass14_0.<UseSingleConstructorActivation>b__0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.NotificationHandlerWrapperImpl`1.Handle(INotification notification, IServiceProvider serviceFactory, Func`4 publish, CancellationToken cancellationToken)
+   at MediatR.Mediator.PublishNotification(INotification notification, CancellationToken cancellationToken)
+   at MediatR.Mediator.Publish[TNotification](TNotification notification, CancellationToken cancellationToken)
+   at Ardalis.SharedKernel.MediatRDomainEventDispatcher.DispatchAndClearEvents(IEnumerable`1 entitiesWithEvents)
+   at Nimble.GuestbookApp.Infrastructure.Data.AppDbContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Infrastructure\Data\AppDbContext.cs:line 41
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.SaveChangesAsync(CancellationToken cancellationToken)
+   at Nimble.GuestbookApp.UseCases.Entries.Create.CreateEntryHandler.Handle(CreateEntryCommand request, CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.UseCases\Entries\Create\CreateEntryHandler.cs:line 25
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Nimble.GuestbookApp.Web.Entries.Create.HandleAsync(CreateEntryRequest request, CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web\Entries\Create.cs:line 26
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-08 00:09:28.132 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 500 null text/plain; charset=utf-8 349.7067ms
+2023-12-08 00:19:36.315 -05:00 [INF] Registered 7 endpoints in 470 milliseconds.
+2023-12-08 00:19:36.981 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-08 00:19:37.138 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-08 00:19:37.296 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-08T00:19:37.2964974-05:00"
+2023-12-08 00:19:37.365 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-08 00:19:37.367 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 00:19:37.368 -05:00 [INF] Hosting environment: Development
+2023-12-08 00:19:37.370 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-08 00:19:37.444 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:19:37.932 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:19:38.105 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 174.7233ms
+2023-12-08 00:19:38.115 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:19:38.120 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 4.7906ms
+2023-12-08 00:19:38.121 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:19:38.152 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.2975ms
+2023-12-08 00:19:38.383 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:19:38.391 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-08 00:19:38.803 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 419.5998ms
+2023-12-08 00:19:45.911 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:19:45.915 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-08 00:19:45.917 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:19:45.965 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:19:45.967 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:19:45.969 -05:00 [INF] Property message : hi
+2023-12-08 00:19:46.077 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:19:46.217 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:19:46.246 -05:00 [INF] Handling EntryCreatedEvent for 12
+2023-12-08 00:19:46.363 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:19:46.368 -05:00 [INF] Queueing up email to send for 12
+2023-12-08 00:19:46.370 -05:00 [INF] (MassTransit) Queueing up email to send for 12
+2023-12-08 00:19:46.486 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 515 ms
+2023-12-08 00:19:46.493 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:19:46.500 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 589.4049ms
+2023-12-08 00:19:47.311 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:19:47.412 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:19:47.415 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:33:54.973 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:33:54.986 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 12.9729ms
+2023-12-08 00:33:55.007 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:33:55.011 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 3.974ms
+2023-12-08 00:33:55.036 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:33:55.048 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.9064ms
+2023-12-08 00:33:55.207 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:33:55.212 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 5.3587ms
+2023-12-08 00:34:27.383 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:34:27.387 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:34:27.389 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:34:27.390 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:34:27.391 -05:00 [INF] Property message : hi
+2023-12-08 00:34:27.398 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:34:27.403 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:34:27.412 -05:00 [INF] Handling EntryCreatedEvent for 13
+2023-12-08 00:34:27.512 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:34:27.515 -05:00 [INF] Queueing up email to send for 13
+2023-12-08 00:34:27.516 -05:00 [INF] (MassTransit) Queueing up email to send for 13
+2023-12-08 00:34:27.523 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 130 ms
+2023-12-08 00:34:27.526 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:34:27.527 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 144.4733ms
+2023-12-08 00:34:28.199 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:34:28.302 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:34:28.305 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:34:29.950 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:34:29.955 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:34:29.957 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:34:29.957 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:34:29.959 -05:00 [INF] Property message : hi
+2023-12-08 00:34:29.961 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:34:29.965 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:34:29.970 -05:00 [INF] Handling EntryCreatedEvent for 14
+2023-12-08 00:34:30.082 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:34:30.085 -05:00 [INF] Queueing up email to send for 14
+2023-12-08 00:34:30.086 -05:00 [INF] (MassTransit) Queueing up email to send for 14
+2023-12-08 00:34:30.090 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 129 ms
+2023-12-08 00:34:30.093 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:34:30.094 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 143.5513ms
+2023-12-08 00:34:32.293 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:34:32.296 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:34:32.298 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:34:32.298 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:34:32.299 -05:00 [INF] Property message : hi
+2023-12-08 00:34:32.301 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:34:32.304 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:34:32.309 -05:00 [INF] Handling EntryCreatedEvent for 15
+2023-12-08 00:34:32.412 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:34:32.415 -05:00 [INF] Queueing up email to send for 15
+2023-12-08 00:34:32.416 -05:00 [INF] (MassTransit) Queueing up email to send for 15
+2023-12-08 00:34:32.420 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 119 ms
+2023-12-08 00:34:32.422 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:34:32.423 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 130.2625ms
+2023-12-08 00:34:38.318 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:34:38.422 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:34:38.426 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:34:48.429 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:34:48.532 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:34:48.535 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:35:40.950 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:35:40.953 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:35:40.955 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:35:40.957 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:35:40.958 -05:00 [INF] Property message : hi
+2023-12-08 00:35:40.960 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:35:40.964 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:35:40.967 -05:00 [INF] Handling EntryCreatedEvent for 16
+2023-12-08 00:35:41.072 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:35:41.075 -05:00 [INF] Queueing up email to send for 16
+2023-12-08 00:35:41.076 -05:00 [INF] (MassTransit) Queueing up email to send for 16
+2023-12-08 00:35:41.086 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 127 ms
+2023-12-08 00:35:41.089 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:35:41.091 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 140.6475ms
+2023-12-08 00:35:42.781 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:35:42.784 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:35:42.786 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:35:42.787 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:35:42.788 -05:00 [INF] Property message : hi
+2023-12-08 00:35:42.790 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:35:42.793 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:35:42.796 -05:00 [INF] Handling EntryCreatedEvent for 17
+2023-12-08 00:35:42.902 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:35:42.905 -05:00 [INF] Queueing up email to send for 17
+2023-12-08 00:35:42.907 -05:00 [INF] (MassTransit) Queueing up email to send for 17
+2023-12-08 00:35:42.914 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 125 ms
+2023-12-08 00:35:42.917 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:35:42.919 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 137.5615ms
+2023-12-08 00:35:48.582 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:35:48.682 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:35:48.685 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:35:58.689 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:35:58.792 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:35:58.795 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:36:17.862 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:36:17.864 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:36:17.866 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:36:17.867 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:36:17.869 -05:00 [INF] Property message : hi
+2023-12-08 00:36:17.871 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:36:17.875 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:36:17.879 -05:00 [INF] Handling EntryCreatedEvent for 18
+2023-12-08 00:36:17.982 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:36:17.985 -05:00 [INF] Queueing up email to send for 18
+2023-12-08 00:36:17.986 -05:00 [INF] (MassTransit) Queueing up email to send for 18
+2023-12-08 00:36:17.992 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 121 ms
+2023-12-08 00:36:17.994 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:36:17.996 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 134.2132ms
+2023-12-08 00:36:18.814 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:36:18.912 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:36:18.914 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:41:44.439 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:41:44.443 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:41:44.444 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:41:44.446 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:41:44.448 -05:00 [INF] Property message : hi
+2023-12-08 00:41:44.452 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:41:44.457 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:41:44.462 -05:00 [INF] Handling EntryCreatedEvent for 19
+2023-12-08 00:41:44.562 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:41:44.565 -05:00 [INF] Queueing up email to send for 19
+2023-12-08 00:41:44.566 -05:00 [INF] (MassTransit) Queueing up email to send for 19
+2023-12-08 00:41:44.569 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 120 ms
+2023-12-08 00:41:44.572 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:41:44.574 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 134.924ms
+2023-12-08 00:41:49.156 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:41:49.262 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:41:49.265 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:43:07.471 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:43:07.475 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:43:07.477 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:43:07.478 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:43:07.480 -05:00 [INF] Property message : hi
+2023-12-08 00:43:07.483 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:43:07.487 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:43:07.491 -05:00 [INF] Handling EntryCreatedEvent for 20
+2023-12-08 00:43:07.602 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:43:07.604 -05:00 [INF] Queueing up email to send for 20
+2023-12-08 00:43:07.605 -05:00 [INF] (MassTransit) Queueing up email to send for 20
+2023-12-08 00:43:07.609 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 126 ms
+2023-12-08 00:43:07.611 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:43:07.612 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 140.8584ms
+2023-12-08 00:43:09.333 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:43:09.432 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:43:09.435 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:43:09.574 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:43:09.577 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:43:09.578 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:43:09.579 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:43:09.580 -05:00 [INF] Property message : hi
+2023-12-08 00:43:09.582 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:43:09.585 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:43:09.591 -05:00 [INF] Handling EntryCreatedEvent for 21
+2023-12-08 00:43:09.692 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:43:09.695 -05:00 [INF] Queueing up email to send for 21
+2023-12-08 00:43:09.696 -05:00 [INF] (MassTransit) Queueing up email to send for 21
+2023-12-08 00:43:09.699 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 117 ms
+2023-12-08 00:43:09.700 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:43:09.702 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 127.715ms
+2023-12-08 00:43:19.450 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:43:19.552 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:43:19.556 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:44:42.844 -05:00 [INF] Registered 7 endpoints in 454 milliseconds.
+2023-12-08 00:44:43.466 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-08 00:44:43.624 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-08 00:44:43.796 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-08T00:44:43.7965865-05:00"
+2023-12-08 00:44:43.866 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-08 00:44:43.868 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 00:44:43.870 -05:00 [INF] Hosting environment: Development
+2023-12-08 00:44:43.872 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-08 00:44:43.942 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:44:44.025 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:44:44.187 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 163.2463ms
+2023-12-08 00:44:44.199 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:44:44.204 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 5.0984ms
+2023-12-08 00:44:44.210 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:44:44.243 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.734ms
+2023-12-08 00:44:44.343 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:44:44.351 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-08 00:44:44.854 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 511.2146ms
+2023-12-08 00:44:46.377 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:44:46.382 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-08 00:44:46.384 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:44:46.431 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:44:46.433 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:44:46.436 -05:00 [INF] Property message : hi
+2023-12-08 00:44:46.528 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:44:46.655 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:44:46.681 -05:00 [INF] Handling EntryCreatedEvent for 22
+2023-12-08 00:44:46.793 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:44:46.797 -05:00 [INF] Queueing up email to send for 22
+2023-12-08 00:44:46.799 -05:00 [INF] (MassTransit) Queueing up email to send for 22
+2023-12-08 00:44:46.873 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "2cf70000-8c64-2441-4c5b-08dbf7b0c965" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:44:52.604 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:44:52.613 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 9.3432ms
+2023-12-08 00:44:52.630 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:44:52.635 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 4.8651ms
+2023-12-08 00:44:52.639 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:44:52.654 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.9339ms
+2023-12-08 00:44:52.739 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:44:52.743 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 4.262ms
+2023-12-08 00:44:53.808 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:44:53.912 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:44:53.916 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:44:54.155 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "2cf70000-8c64-2441-ea37-08dbf7b0cdc3" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:45:03.909 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "2cf70000-8c64-2441-4e92-08dbf7b0d394" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:45:40.706 -05:00 [INF] Registered 7 endpoints in 495 milliseconds.
+2023-12-08 00:45:41.332 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-08 00:45:41.508 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-08 00:45:41.665 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-08T00:45:41.6654593-05:00"
+2023-12-08 00:45:41.741 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-08 00:45:41.742 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 00:45:41.744 -05:00 [INF] Hosting environment: Development
+2023-12-08 00:45:41.746 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-08 00:45:41.823 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:45:41.830 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:45:41.991 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 170.4681ms
+2023-12-08 00:45:41.998 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:45:42.004 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 5.4632ms
+2023-12-08 00:45:42.009 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:45:42.038 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.0313ms
+2023-12-08 00:45:42.121 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:45:42.131 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-08 00:45:42.741 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 620.7187ms
+2023-12-08 00:45:49.297 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:45:49.302 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-08 00:45:49.304 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:45:49.355 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:45:49.358 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:45:49.360 -05:00 [INF] Property message : hi
+2023-12-08 00:45:49.469 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:45:49.621 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:45:49.649 -05:00 [INF] Handling EntryCreatedEvent for 23
+2023-12-08 00:45:49.763 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:45:49.768 -05:00 [INF] Queueing up email to send for 23
+2023-12-08 00:45:49.771 -05:00 [INF] (MassTransit) Queueing up email to send for 23
+2023-12-08 00:45:49.885 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "00be0000-8c64-2441-2821-08dbf7b0eef0" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:45:51.687 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:45:51.792 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:45:51.796 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:45:57.226 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "00be0000-8c64-2441-ccd6-08dbf7b0f35b" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:46:07.707 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "00be0000-8c64-2441-143d-08dbf7b0f99b" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:46:22.458 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "00be0000-8c64-2441-f826-08dbf7b10265" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:46:49.046 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "00be0000-8c64-2441-f0d7-08dbf7b1123e" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:47:20.071 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "00be0000-8c64-2441-f035-08dbf7b124bc" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:47:51.093 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "00be0000-8c64-2441-9516-08dbf7b1373a" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:48:22.134 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "00be0000-8c64-2441-ee9d-08dbf7b149ba" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:48:53.167 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "00be0000-8c64-2441-4060-08dbf7b15c3a" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:49:24.187 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "00be0000-8c64-2441-74f2-08dbf7b16eb7" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:49:27.026 -05:00 [INF] Registered 7 endpoints in 533 milliseconds.
+2023-12-08 00:49:27.754 -05:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-08 00:49:27.894 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-08 00:49:28.062 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-08T00:49:28.0621304-05:00"
+2023-12-08 00:49:28.120 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-08 00:49:28.123 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 00:49:28.124 -05:00 [INF] Hosting environment: Development
+2023-12-08 00:49:28.125 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-08 00:49:28.153 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:49:28.203 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:49:28.303 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 150.3094ms
+2023-12-08 00:49:28.315 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:49:28.321 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 6.2315ms
+2023-12-08 00:49:28.327 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:49:28.356 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.6204ms
+2023-12-08 00:49:28.445 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:49:28.453 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-08 00:49:28.850 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 404.8237ms
+2023-12-08 00:49:39.660 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:49:39.667 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 7.0978ms
+2023-12-08 00:49:39.683 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:49:39.686 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 3.6335ms
+2023-12-08 00:49:39.696 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:49:39.711 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.364ms
+2023-12-08 00:49:39.773 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:49:39.777 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 3.8141ms
+2023-12-08 00:49:53.426 -05:00 [INF] Registered 7 endpoints in 486 milliseconds.
+2023-12-08 00:49:54.054 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-08 00:49:54.258 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-08 00:49:54.475 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-08T00:49:54.4748539-05:00"
+2023-12-08 00:49:54.551 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-08 00:49:54.553 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 00:49:54.554 -05:00 [INF] Hosting environment: Development
+2023-12-08 00:49:54.555 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-08 00:49:54.630 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:49:55.092 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:49:55.261 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 169.8309ms
+2023-12-08 00:49:55.268 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:49:55.268 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:49:55.276 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 8.1101ms
+2023-12-08 00:49:55.298 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.2997ms
+2023-12-08 00:49:55.345 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:49:55.353 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-08 00:49:55.766 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 421.4422ms
+2023-12-08 00:50:04.800 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:50:04.804 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-08 00:50:04.807 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:50:04.852 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:50:04.855 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:50:04.857 -05:00 [INF] Property message : hi
+2023-12-08 00:50:04.951 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:50:05.101 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:50:05.128 -05:00 [INF] Handling EntryCreatedEvent for 24
+2023-12-08 00:50:05.233 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:50:05.236 -05:00 [INF] Queueing up email to send for 24
+2023-12-08 00:50:05.239 -05:00 [INF] (MassTransit) Queueing up email to send for 24
+2023-12-08 00:50:05.302 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "c40a0000-8c64-2441-6496-08dbf7b18733" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:50:12.578 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "c40a0000-8c64-2441-7cf3-08dbf7b18b8f" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:50:14.496 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:50:14.602 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:50:14.605 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:50:23.515 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "c40a0000-8c64-2441-668b-08dbf7b19214" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:50:37.551 -05:00 [ERR] S-FAULT "rabbitmq://localhost/email_queue" "c40a0000-8c64-2441-01ad-08dbf7b19a72" Nimble.GuestbookApp.Core.Services.EntryPointService+EmailDetails
+RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=406, text='PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'email_queue' in vhost '/': received 'fanout' but current is 'direct'', classId=40, methodId=10
+   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.<>c__DisplayClass16_0.<ExchangeDeclare>b__0() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 100
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>g__RunMethod|0() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 135
+   at MassTransit.Util.ChannelExecutor.<>c__DisplayClass13_0.<Run>b__1() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 140
+   at MassTransit.Util.ChannelExecutor.SynchronousFuture`1.Run() in /_/src/MassTransit/Util/ChannelExecutor.cs:line 283
+--- End of stack trace from previous location ---
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken) in /_/src/MassTransit/Util/ChannelExecutor.cs:line 149
+   at MassTransit.RabbitMqTransport.RabbitMqModelContext.RunRpc(Action callback, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqModelContext.cs:line 216
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.ConfigureTopology(ModelContext context) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 49
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.<>c__DisplayClass3_0.<<MassTransit-IFilter<MassTransit-RabbitMqTransport-ModelContext>-Send>b__0>d.MoveNext() in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 30
+--- End of stack trace from previous location ---
+   at MassTransit.PipeExtensions.OneTimeSetup[T](PipeContext context, Func`2 setupMethod, PayloadFactory`1 payloadFactory) in /_/src/MassTransit.Abstractions/Middleware/PipeExtensions.cs:line 106
+   at MassTransit.RabbitMqTransport.Middleware.ConfigureRabbitMqTopologyFilter`1.MassTransit.IFilter<MassTransit.RabbitMqTransport.ModelContext>.Send(ModelContext context, IPipe`1 next) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/Middleware/ConfigureRabbitMqTopologyFilter.cs:line 28
+   at MassTransit.RabbitMqTransport.RabbitMqSendTransportContext.Send[T](ModelContext transportContext, SendContext`1 sendContext) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/RabbitMqSendTransportContext.cs:line 106
+   at MassTransit.Transports.SendTransport`1.SendPipe`1.Send(TContext context) in /_/src/MassTransit/Transports/SendTransport.cs:line 93
+2023-12-08 00:51:08.614 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 63755 ms
+2023-12-08 00:51:08.621 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:51:08.629 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 63828.3276ms
+2023-12-08 00:52:46.017 -05:00 [INF] Registered 7 endpoints in 527 milliseconds.
+2023-12-08 00:52:46.670 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-08 00:52:46.830 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-08 00:52:47.022 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-08T00:52:47.0225783-05:00"
+2023-12-08 00:52:47.092 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-08 00:52:47.094 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 00:52:47.096 -05:00 [INF] Hosting environment: Development
+2023-12-08 00:52:47.097 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-08 00:52:47.170 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:52:47.664 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:52:47.831 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 167.9932ms
+2023-12-08 00:52:47.839 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:52:47.839 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:52:47.848 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 8.5936ms
+2023-12-08 00:52:47.864 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.4579ms
+2023-12-08 00:52:47.918 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:52:47.927 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-08 00:52:48.428 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 510.1177ms
+2023-12-08 00:52:58.005 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:52:58.011 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-08 00:52:58.014 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:52:58.074 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:52:58.077 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:52:58.079 -05:00 [INF] Property message : hi
+2023-12-08 00:52:58.176 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:52:58.336 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:52:58.365 -05:00 [INF] Handling EntryCreatedEvent for 25
+2023-12-08 00:52:58.473 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:52:58.476 -05:00 [INF] Queueing up email to send for 25
+2023-12-08 00:52:58.480 -05:00 [INF] (MassTransit) Queueing up email to send for 25
+2023-12-08 00:52:58.585 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 502 ms
+2023-12-08 00:52:58.593 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:52:58.603 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 597.5313ms
+2023-12-08 00:53:07.052 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:53:07.152 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:53:07.156 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:54:21.958 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:54:21.962 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:54:21.964 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:54:21.965 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:54:21.966 -05:00 [INF] Property message : hi
+2023-12-08 00:54:21.970 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:54:21.975 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:54:21.981 -05:00 [INF] Handling EntryCreatedEvent for 26
+2023-12-08 00:54:22.082 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:54:22.084 -05:00 [INF] Queueing up email to send for 26
+2023-12-08 00:54:22.086 -05:00 [INF] (MassTransit) Queueing up email to send for 26
+2023-12-08 00:54:22.096 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 128 ms
+2023-12-08 00:54:22.100 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:54:22.102 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 143.8791ms
+2023-12-08 00:54:27.248 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:54:27.352 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:54:27.356 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 00:58:23.287 -05:00 [INF] Registered 7 endpoints in 601 milliseconds.
+2023-12-08 00:58:23.997 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-08 00:58:24.159 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-08 00:58:24.381 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-08T00:58:24.3813921-05:00"
+2023-12-08 00:58:24.461 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-08 00:58:24.463 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 00:58:24.464 -05:00 [INF] Hosting environment: Development
+2023-12-08 00:58:24.465 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-08 00:58:24.546 -05:00 [INF] Bus started: "rabbitmq://localhost/"
+2023-12-08 00:58:24.594 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-08 00:58:24.784 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 190.6604ms
+2023-12-08 00:58:24.796 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-08 00:58:24.797 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-08 00:58:24.807 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 9.9136ms
+2023-12-08 00:58:24.829 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.6119ms
+2023-12-08 00:58:24.955 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-08 00:58:24.966 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-08 00:58:25.464 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 508.6364ms
+2023-12-08 00:58:34.332 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 00:58:34.337 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-08 00:58:34.339 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 00:58:34.396 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 00:58:34.399 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 00:58:34.400 -05:00 [INF] Property message : hi
+2023-12-08 00:58:34.491 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 00:58:34.618 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 00:58:34.647 -05:00 [INF] Handling EntryCreatedEvent for 27
+2023-12-08 00:58:34.753 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 00:58:34.758 -05:00 [INF] Queueing up email to send for 27
+2023-12-08 00:58:34.761 -05:00 [INF] (MassTransit) Queueing up email to send for 27
+2023-12-08 00:58:34.864 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 462 ms
+2023-12-08 00:58:34.870 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 00:58:34.879 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 546.1783ms
+2023-12-08 00:58:44.408 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 00:58:44.512 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 00:58:44.516 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 01:01:03.635 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 01:01:03.640 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 01:01:03.643 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 01:01:03.646 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 01:01:03.647 -05:00 [INF] Property message : hi
+2023-12-08 01:01:03.650 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 01:01:03.655 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 01:01:03.661 -05:00 [INF] Handling EntryCreatedEvent for 28
+2023-12-08 01:01:03.762 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 01:01:03.765 -05:00 [INF] Queueing up email to send for 28
+2023-12-08 01:01:03.767 -05:00 [INF] (MassTransit) Queueing up email to send for 28
+2023-12-08 01:01:03.776 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 127 ms
+2023-12-08 01:01:03.780 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 01:01:03.781 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 146.5541ms
+2023-12-08 01:01:04.655 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 01:01:04.762 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 01:01:04.765 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 01:01:06.033 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 01:01:06.036 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 01:01:06.038 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 01:01:06.038 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 01:01:06.040 -05:00 [INF] Property message : hi
+2023-12-08 01:01:06.041 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 01:01:06.045 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 01:01:06.051 -05:00 [INF] Handling EntryCreatedEvent for 29
+2023-12-08 01:01:06.152 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 01:01:06.156 -05:00 [INF] Queueing up email to send for 29
+2023-12-08 01:01:06.157 -05:00 [INF] (MassTransit) Queueing up email to send for 29
+2023-12-08 01:01:06.165 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 124 ms
+2023-12-08 01:01:06.168 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 01:01:06.170 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 137.4441ms
+2023-12-08 01:01:07.851 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 01:01:07.854 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 01:01:07.856 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 01:01:07.857 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 01:01:07.859 -05:00 [INF] Property message : hi
+2023-12-08 01:01:07.860 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 01:01:07.864 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 01:01:07.868 -05:00 [INF] Handling EntryCreatedEvent for 30
+2023-12-08 01:01:07.972 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 01:01:07.975 -05:00 [INF] Queueing up email to send for 30
+2023-12-08 01:01:07.977 -05:00 [INF] (MassTransit) Queueing up email to send for 30
+2023-12-08 01:01:07.985 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 125 ms
+2023-12-08 01:01:07.988 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 01:01:07.992 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 139.7362ms
+2023-12-08 01:01:14.769 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 01:01:14.872 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 01:01:14.875 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 01:01:24.887 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 01:01:24.992 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 01:01:24.995 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-08 01:01:40.365 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-08 01:01:40.369 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-08 01:01:40.371 -05:00 [INF] Handling CreateEntryCommand
+2023-12-08 01:01:40.373 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-08 01:01:40.374 -05:00 [INF] Property message : hi
+2023-12-08 01:01:40.377 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-08 01:01:40.381 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-08 01:01:40.385 -05:00 [INF] Handling EntryCreatedEvent for 31
+2023-12-08 01:01:40.492 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-08 01:01:40.495 -05:00 [INF] Queueing up email to send for 31
+2023-12-08 01:01:40.496 -05:00 [INF] (MassTransit) Queueing up email to send for 31
+2023-12-08 01:01:40.505 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 129 ms
+2023-12-08 01:01:40.507 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-08 01:01:40.509 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 144.7097ms
+2023-12-08 01:01:45.008 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-08 01:01:45.112 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-08 01:01:45.115 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!

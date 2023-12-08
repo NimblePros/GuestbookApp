@@ -1,13 +1,15 @@
 ﻿using System.Threading.Channels;
 using Nimble.GuestbookApp.Core.Interfaces;
+using Nimble.GuestbookApp.Core.Services;
 using static Nimble.GuestbookApp.Core.Services.EntryPointService;
 
 namespace Nimble.GuestbookApp.Infrastructure.Messaging;
-public class EmailQueueProvider : IEmailQueueProvider
+
+public class ChannelEmailQueueProvider : IEmailQueueProvider
 {
   private readonly Channel<EmailDetails> _queue;
 
-  public EmailQueueProvider()
+  public ChannelEmailQueueProvider()
   {
     _queue = Channel.CreateUnbounded<EmailDetails>(); // No max capacity
   }

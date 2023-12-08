@@ -713,3 +713,420 @@ SELECT EXISTS (
 2023-12-07 21:52:25.903 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
 2023-12-07 21:52:25.911 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
 2023-12-07 21:52:26.354 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 450.133ms
+2023-12-07 22:47:28.368 -05:00 [INF] Registered 7 endpoints in 343 milliseconds.
+2023-12-07 22:47:28.962 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 22:47:29.112 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 22:47:29.175 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-07T22:47:29.1747021-05:00"
+2023-12-07 22:47:29.217 -05:00 [INF] Now listening on: http://localhost:57679
+2023-12-07 22:47:29.220 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 22:47:29.221 -05:00 [INF] Hosting environment: Development
+2023-12-07 22:47:29.222 -05:00 [INF] Content root path: C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web
+2023-12-07 22:47:29.742 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger - null null
+2023-12-07 22:47:29.865 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger - 302 0 null 124.3854ms
+2023-12-07 22:47:29.870 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - null null
+2023-12-07 22:47:29.968 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 97.9376ms
+2023-12-07 22:47:29.996 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-07 22:47:30.004 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13782 application/javascript; charset=utf-8 7.0689ms
+2023-12-07 22:47:30.037 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - null null
+2023-12-07 22:47:30.074 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.2431ms
+2023-12-07 22:47:30.185 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - null null
+2023-12-07 22:47:30.192 -05:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-07 22:47:30.636 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 451.5213ms
+2023-12-07 22:47:51.698 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:57679/Entries - application/json 57
+2023-12-07 22:47:51.703 -05:00 [WRN] Failed to determine the https port for redirect.
+2023-12-07 22:47:51.705 -05:00 [INF] Executing endpoint 'HTTP: POST /Entries'
+2023-12-07 22:47:51.748 -05:00 [INF] Handling CreateEntryCommand
+2023-12-07 22:47:51.750 -05:00 [INF] Property emailAddress : abc@def.com
+2023-12-07 22:47:51.752 -05:00 [INF] Property message : hi
+2023-12-07 22:47:51.843 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "g"."Id", "g"."Name"
+FROM "Guestbooks" AS "g"
+2023-12-07 22:47:51.972 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTimeOffset), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "GuestbookEntry" ("DateTimeCreated", "EmailAddress", "GuestbookId", "Message")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-12-07 22:47:51.999 -05:00 [INF] Handling EntryCreatedEvent for 7
+2023-12-07 22:47:52.133 -05:00 [WRN] Sending email to abc@def.com from donotreply@test.com with subject Guestbook Entry Accepted.
+2023-12-07 22:47:52.136 -05:00 [INF] Queueing up email to send for 7
+2023-12-07 22:47:52.139 -05:00 [INF] Handled CreateEntryCommand with Ardalis.Result.Result`1[System.Int32] in 385 ms
+2023-12-07 22:47:52.148 -05:00 [INF] Executed endpoint 'HTTP: POST /Entries'
+2023-12-07 22:47:52.156 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:57679/Entries - 200 null application/json 457.627ms
+2023-12-07 22:47:59.203 -05:00 [INF] Got message: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }
+2023-12-07 22:47:59.312 -05:00 [WRN] Sending email to recipient@test.com from noreply@test.com with subject Sent via Queue.
+2023-12-07 22:47:59.316 -05:00 [INF] Email Sent: EmailDetails { To = recipient@test.com, From = noreply@test.com, Subject = Sent via Queue, Body = body }!
+2023-12-07 23:31:43.757 -05:00 [INF] Registered 7 endpoints in 650 milliseconds.
+2023-12-07 23:31:44.381 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 23:31:44.561 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 23:34:26.354 -05:00 [INF] Registered 7 endpoints in 510 milliseconds.
+2023-12-07 23:34:26.997 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 23:34:27.152 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 23:37:17.829 -05:00 [INF] Registered 7 endpoints in 442 milliseconds.
+2023-12-07 23:37:18.415 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 23:37:18.565 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 23:37:29.023 -05:00 [INF] Registered 7 endpoints in 576 milliseconds.
+2023-12-07 23:37:29.786 -05:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 23:37:30.004 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 23:38:55.458 -05:00 [INF] Registered 7 endpoints in 458 milliseconds.
+2023-12-07 23:38:56.093 -05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-12-07 23:38:56.260 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-12-07 23:38:56.409 -05:00 [INF] CleanArchitecture.Worker service starting at: "2023-12-07T23:38:56.4088613-05:00"
+2023-12-07 23:38:56.412 -05:00 [ERR] EntryPointService.ExecuteAsync threw an exception.
+System.NotImplementedException: The method or operation is not implemented.
+   at Nimble.GuestbookApp.Infrastructure.Messaging.RabbitMQEmailQueueProvider.TryRead() in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Infrastructure\Messaging\RabbitMQEmailQueueProvider.cs:line 16
+   at Nimble.GuestbookApp.Core.Services.EntryPointService.ExecuteAsync() in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Core\Services\EntryPointService.cs:line 29
+2023-12-07 23:38:56.442 -05:00 [WRN] Start called, but the host was already started: "rabbitmq://localhost/" (Already Started)
+2023-12-07 23:39:00.548 -05:00 [WRN] Connection Failed: "rabbitmq://localhost/"
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.Impl.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+2023-12-07 23:39:06.431 -05:00 [ERR] EntryPointService.ExecuteAsync threw an exception.
+System.NotImplementedException: The method or operation is not implemented.
+   at Nimble.GuestbookApp.Infrastructure.Messaging.RabbitMQEmailQueueProvider.TryRead() in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Infrastructure\Messaging\RabbitMQEmailQueueProvider.cs:line 16
+   at Nimble.GuestbookApp.Core.Services.EntryPointService.ExecuteAsync() in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Core\Services\EntryPointService.cs:line 29
+2023-12-07 23:39:11.744 -05:00 [WRN] Connection Failed: "rabbitmq://localhost/"
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.Impl.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+2023-12-07 23:39:16.433 -05:00 [ERR] EntryPointService.ExecuteAsync threw an exception.
+System.NotImplementedException: The method or operation is not implemented.
+   at Nimble.GuestbookApp.Infrastructure.Messaging.RabbitMQEmailQueueProvider.TryRead() in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Infrastructure\Messaging\RabbitMQEmailQueueProvider.cs:line 16
+   at Nimble.GuestbookApp.Core.Services.EntryPointService.ExecuteAsync() in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Core\Services\EntryPointService.cs:line 29
+2023-12-07 23:39:24.669 -05:00 [WRN] Connection Failed: "rabbitmq://localhost/"
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.Impl.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+2023-12-07 23:39:26.442 -05:00 [ERR] EntryPointService.ExecuteAsync threw an exception.
+System.NotImplementedException: The method or operation is not implemented.
+   at Nimble.GuestbookApp.Infrastructure.Messaging.RabbitMQEmailQueueProvider.TryRead() in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Infrastructure\Messaging\RabbitMQEmailQueueProvider.cs:line 16
+   at Nimble.GuestbookApp.Core.Services.EntryPointService.ExecuteAsync() in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Core\Services\EntryPointService.cs:line 29
+2023-12-07 23:39:36.446 -05:00 [ERR] EntryPointService.ExecuteAsync threw an exception.
+System.NotImplementedException: The method or operation is not implemented.
+   at Nimble.GuestbookApp.Infrastructure.Messaging.RabbitMQEmailQueueProvider.TryRead() in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Infrastructure\Messaging\RabbitMQEmailQueueProvider.cs:line 16
+   at Nimble.GuestbookApp.Core.Services.EntryPointService.ExecuteAsync() in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Core\Services\EntryPointService.cs:line 29
+2023-12-07 23:39:44.874 -05:00 [WRN] Connection Failed: "rabbitmq://localhost/"
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.Impl.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+2023-12-07 23:39:46.454 -05:00 [ERR] EntryPointService.ExecuteAsync threw an exception.
+System.NotImplementedException: The method or operation is not implemented.
+   at Nimble.GuestbookApp.Infrastructure.Messaging.RabbitMQEmailQueueProvider.TryRead() in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Infrastructure\Messaging\RabbitMQEmailQueueProvider.cs:line 16
+   at Nimble.GuestbookApp.Core.Services.EntryPointService.ExecuteAsync() in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Core\Services\EntryPointService.cs:line 29
+2023-12-07 23:39:51.650 -05:00 [INF] Application is shutting down...
+2023-12-07 23:39:51.652 -05:00 [WRN] Bus start canceled: "rabbitmq://localhost/"
+System.OperationCanceledException: The operation was canceled.
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext() in /_/src/MassTransit.Abstractions/Internals/Extensions/TaskExtensions.cs:line 69
+--- End of stack trace from previous location ---
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext() in /_/src/MassTransit.Abstractions/Internals/Extensions/TaskExtensions.cs:line 72
+--- End of stack trace from previous location ---
+   at MassTransit.MassTransitBus.StartAsync(CancellationToken cancellationToken) in /_/src/MassTransit/MassTransitBus.cs:line 194
+2023-12-07 23:39:51.652 -05:00 [WRN] Bus start canceled: "rabbitmq://localhost/"
+System.OperationCanceledException: The operation was canceled.
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext() in /_/src/MassTransit.Abstractions/Internals/Extensions/TaskExtensions.cs:line 69
+--- End of stack trace from previous location ---
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext() in /_/src/MassTransit.Abstractions/Internals/Extensions/TaskExtensions.cs:line 72
+--- End of stack trace from previous location ---
+   at MassTransit.MassTransitBus.StartAsync(CancellationToken cancellationToken) in /_/src/MassTransit/MassTransitBus.cs:line 194
+2023-12-07 23:39:51.652 -05:00 [ERR] BackgroundService failed
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Nimble.GuestbookApp.Web.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web\Worker.cs:line 26
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-12-07 23:39:51.673 -05:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Nimble.GuestbookApp.Web.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Web\Worker.cs:line 26
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-12-07 23:39:51.677 -05:00 [INF] Bus stopped: "rabbitmq://localhost/"
+2023-12-07 23:39:51.677 -05:00 [INF] Bus stopped: "rabbitmq://localhost/"
+2023-12-07 23:39:51.679 -05:00 [WRN] Bus start faulted: "rabbitmq://localhost/"
+MassTransit.RabbitMqConnectionException: Broker unreachable: guest@localhost:5672/
+ ---> RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.Impl.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+   --- End of inner exception stack trace ---
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 112
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext() in /_/src/MassTransit.Abstractions/Internals/Extensions/TaskExtensions.cs:line 72
+--- End of stack trace from previous location ---
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateSharedConnection(Task`1 context, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 58
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 51
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 61
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 67
+   at MassTransit.SupervisorExtensions.<>c__DisplayClass5_0`2.<<CreateAgent>g__HandleSupervisorTask|0>d.MoveNext() in /_/src/MassTransit/SupervisorExtensions.cs:line 139
+--- End of stack trace from previous location ---
+   at MassTransit.SupervisorExtensions.CreateAgent[T,TAgent](ISupervisor`1 supervisor, IAsyncPipeContextAgent`1 asyncContext, Func`3 agentFactory, CancellationToken cancellationToken) in /_/src/MassTransit/SupervisorExtensions.cs:line 158
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext() in /_/src/MassTransit.Abstractions/Internals/Extensions/TaskExtensions.cs:line 72
+--- End of stack trace from previous location ---
+   at MassTransit.RabbitMqTransport.ModelContextFactory.CreateSharedModel(Task`1 context, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ModelContextFactory.cs:line 50
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 51
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 61
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 67
+   at MassTransit.Transports.TransportStartExtensions.OnTransportStartup[T](ReceiveEndpointContext context, ITransportSupervisor`1 supervisor, CancellationToken cancellationToken) in /_/src/MassTransit/Transports/TransportStartExtensions.cs:line 19
+   at MassTransit.Transports.ReceiveTransport`1.ReceiveTransportAgent.RunTransport() in /_/src/MassTransit/Transports/ReceiveTransport.cs:line 192
+   at MassTransit.Transports.ReceiveTransport`1.ReceiveTransportAgent.RunTransport() in /_/src/MassTransit/Transports/ReceiveTransport.cs:line 200
+   at MassTransit.Transports.ReceiveTransport`1.ReceiveTransportAgent.Run() in /_/src/MassTransit/Transports/ReceiveTransport.cs:line 128
+   at MassTransit.Transports.StartHostHandle.EndpointsReady(Task`1[] endpoints) in /_/src/MassTransit/Transports/StartHostHandle.cs:line 45
+   at MassTransit.Transports.StartHostHandle.EndpointsReady(Task`1[] endpoints) in /_/src/MassTransit/Transports/StartHostHandle.cs:line 45
+   at MassTransit.MassTransitBus.Handle.ReadyOrNot(Task`1 ready) in /_/src/MassTransit/MassTransitBus.cs:line 415
+   at MassTransit.MassTransitBus.StartAsync(CancellationToken cancellationToken) in /_/src/MassTransit/MassTransitBus.cs:line 209
+2023-12-07 23:39:51.681 -05:00 [WRN] Bus start faulted: "rabbitmq://localhost/"
+MassTransit.RabbitMqConnectionException: Broker unreachable: guest@localhost:5672/
+ ---> RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.Impl.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+   --- End of inner exception stack trace ---
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 112
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext() in /_/src/MassTransit.Abstractions/Internals/Extensions/TaskExtensions.cs:line 72
+--- End of stack trace from previous location ---
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateSharedConnection(Task`1 context, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 58
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 51
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 61
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 67
+   at MassTransit.SupervisorExtensions.<>c__DisplayClass5_0`2.<<CreateAgent>g__HandleSupervisorTask|0>d.MoveNext() in /_/src/MassTransit/SupervisorExtensions.cs:line 139
+--- End of stack trace from previous location ---
+   at MassTransit.SupervisorExtensions.CreateAgent[T,TAgent](ISupervisor`1 supervisor, IAsyncPipeContextAgent`1 asyncContext, Func`3 agentFactory, CancellationToken cancellationToken) in /_/src/MassTransit/SupervisorExtensions.cs:line 158
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext() in /_/src/MassTransit.Abstractions/Internals/Extensions/TaskExtensions.cs:line 72
+--- End of stack trace from previous location ---
+   at MassTransit.RabbitMqTransport.ModelContextFactory.CreateSharedModel(Task`1 context, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ModelContextFactory.cs:line 50
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 51
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 61
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 67
+   at MassTransit.Transports.TransportStartExtensions.OnTransportStartup[T](ReceiveEndpointContext context, ITransportSupervisor`1 supervisor, CancellationToken cancellationToken) in /_/src/MassTransit/Transports/TransportStartExtensions.cs:line 19
+   at MassTransit.Transports.ReceiveTransport`1.ReceiveTransportAgent.RunTransport() in /_/src/MassTransit/Transports/ReceiveTransport.cs:line 192
+   at MassTransit.Transports.ReceiveTransport`1.ReceiveTransportAgent.RunTransport() in /_/src/MassTransit/Transports/ReceiveTransport.cs:line 200
+   at MassTransit.Transports.ReceiveTransport`1.ReceiveTransportAgent.Run() in /_/src/MassTransit/Transports/ReceiveTransport.cs:line 128
+   at MassTransit.Transports.StartHostHandle.EndpointsReady(Task`1[] endpoints) in /_/src/MassTransit/Transports/StartHostHandle.cs:line 45
+   at MassTransit.Transports.StartHostHandle.EndpointsReady(Task`1[] endpoints) in /_/src/MassTransit/Transports/StartHostHandle.cs:line 45
+   at MassTransit.MassTransitBus.Handle.ReadyOrNot(Task`1 ready) in /_/src/MassTransit/MassTransitBus.cs:line 415
+   at MassTransit.MassTransitBus.StartAsync(CancellationToken cancellationToken) in /_/src/MassTransit/MassTransitBus.cs:line 209
+   at MassTransit.MassTransitBus.StartAsync(CancellationToken cancellationToken) in /_/src/MassTransit/MassTransitBus.cs:line 247
+2023-12-07 23:39:51.707 -05:00 [ERR] Hosting failed to start
+MassTransit.RabbitMqConnectionException: Broker unreachable: guest@localhost:5672/
+ ---> RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.Impl.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+   --- End of inner exception stack trace ---
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 112
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext() in /_/src/MassTransit.Abstractions/Internals/Extensions/TaskExtensions.cs:line 72
+--- End of stack trace from previous location ---
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateSharedConnection(Task`1 context, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 58
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 51
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 61
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 67
+   at MassTransit.SupervisorExtensions.<>c__DisplayClass5_0`2.<<CreateAgent>g__HandleSupervisorTask|0>d.MoveNext() in /_/src/MassTransit/SupervisorExtensions.cs:line 139
+--- End of stack trace from previous location ---
+   at MassTransit.SupervisorExtensions.CreateAgent[T,TAgent](ISupervisor`1 supervisor, IAsyncPipeContextAgent`1 asyncContext, Func`3 agentFactory, CancellationToken cancellationToken) in /_/src/MassTransit/SupervisorExtensions.cs:line 158
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at MassTransit.Internals.TaskExtensions.<>c__DisplayClass2_0`1.<<OrCanceled>g__WaitAsync|0>d.MoveNext() in /_/src/MassTransit.Abstractions/Internals/Extensions/TaskExtensions.cs:line 72
+--- End of stack trace from previous location ---
+   at MassTransit.RabbitMqTransport.ModelContextFactory.CreateSharedModel(Task`1 context, CancellationToken cancellationToken) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ModelContextFactory.cs:line 50
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 51
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 61
+   at MassTransit.Agents.PipeContextSupervisor`1.Send(IPipe`1 pipe, CancellationToken cancellationToken) in /_/src/MassTransit/Agents/PipeContextSupervisor.cs:line 67
+   at MassTransit.Transports.TransportStartExtensions.OnTransportStartup[T](ReceiveEndpointContext context, ITransportSupervisor`1 supervisor, CancellationToken cancellationToken) in /_/src/MassTransit/Transports/TransportStartExtensions.cs:line 19
+   at MassTransit.Transports.ReceiveTransport`1.ReceiveTransportAgent.RunTransport() in /_/src/MassTransit/Transports/ReceiveTransport.cs:line 192
+   at MassTransit.Transports.ReceiveTransport`1.ReceiveTransportAgent.RunTransport() in /_/src/MassTransit/Transports/ReceiveTransport.cs:line 200
+   at MassTransit.Transports.ReceiveTransport`1.ReceiveTransportAgent.Run() in /_/src/MassTransit/Transports/ReceiveTransport.cs:line 128
+   at MassTransit.Transports.StartHostHandle.EndpointsReady(Task`1[] endpoints) in /_/src/MassTransit/Transports/StartHostHandle.cs:line 45
+   at MassTransit.Transports.StartHostHandle.EndpointsReady(Task`1[] endpoints) in /_/src/MassTransit/Transports/StartHostHandle.cs:line 45
+   at MassTransit.MassTransitBus.Handle.ReadyOrNot(Task`1 ready) in /_/src/MassTransit/MassTransitBus.cs:line 415
+   at MassTransit.MassTransitBus.StartAsync(CancellationToken cancellationToken) in /_/src/MassTransit/MassTransitBus.cs:line 209
+   at MassTransit.MassTransitBus.StartAsync(CancellationToken cancellationToken) in /_/src/MassTransit/MassTransitBus.cs:line 247
+   at MassTransit.MassTransitBus.StartAsync(CancellationToken cancellationToken) in /_/src/MassTransit/MassTransitBus.cs:line 247
+   at Nimble.GuestbookApp.Infrastructure.Messaging.BusService.StartAsync(CancellationToken cancellationToken) in C:\dev\GitHub-nimblepros\GuestbookApp\Nimble.GuestbookApp\src\Nimble.GuestbookApp.Infrastructure\Messaging\BusService.cs:line 18
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2023-12-07 23:39:51.726 -05:00 [WRN] Failed to stop bus: "rabbitmq://localhost/DESKTOPS6881UA_NimbleGuestbookAppWeb_bus_k14oyyrcco1rno47bdp9xjhsf3?temporary=true" (Not Started)

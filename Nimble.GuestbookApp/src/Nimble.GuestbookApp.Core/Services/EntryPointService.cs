@@ -9,7 +9,6 @@ public class EntryPointService : IEntryPointService
   private readonly IEmailSender _emailSender;
   private readonly ILoggerAdapter<EntryPointService> _logger;
 
-  public record EmailDetails(string To, string From, string Subject, string Body);
 
   public EntryPointService(IEmailQueueProvider emailQueueProvider, IEmailSender emailSender, ILoggerAdapter<EntryPointService> logger)
   {

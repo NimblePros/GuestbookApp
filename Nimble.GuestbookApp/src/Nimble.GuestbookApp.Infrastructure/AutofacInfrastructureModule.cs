@@ -13,6 +13,9 @@ using MediatR.Pipeline;
 using Module = Autofac.Module;
 using Nimble.GuestbookApp.UseCases.Entries.List;
 using Nimble.GuestbookApp.Infrastructure.Messaging;
+using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Win32;
 
 namespace Nimble.GuestbookApp.Infrastructure;
 
@@ -54,6 +57,7 @@ public class AutofacInfrastructureModule : Module
   protected override void Load(ContainerBuilder builder)
   {
     LoadAssemblies();
+
     if (_isDevelopment && false)
     {
       RegisterDevelopmentOnlyDependencies(builder);
@@ -66,8 +70,12 @@ public class AutofacInfrastructureModule : Module
     RegisterQueries(builder);
     RegisterMediatR(builder);
 
-    builder.RegisterType<EmailQueueProvider>()
+    builder.RegisterType<ChannelEmailQueueProvider>()
       .As<IEmailQueueProvider>()
+      .SingleInstance();
+
+    builder.RegisterType<RabbitMQEmailQueueWriter>()
+      .As<IEmailQueueWriter>()
       .SingleInstance();
 
   }
