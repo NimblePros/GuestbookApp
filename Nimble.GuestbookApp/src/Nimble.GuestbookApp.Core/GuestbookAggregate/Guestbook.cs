@@ -12,7 +12,6 @@ public class Guestbook : EntityBase, IAggregateRoot
     _entries.Add(entry);
 
     RegisterDomainEvent(new EntryCreatedEvent(entry));
-
   }
 
   public void SeedEntry(GuestbookEntry entry)
